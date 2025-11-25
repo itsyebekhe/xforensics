@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         X Profile Forensics (v11.0)
+// @name         X Profile Forensics (v13.0)
 // @namespace    http://tampermonkey.net/
-// @version      11.0.0
-// @description  Complete Forensics with Stability Fixes. Uses a backup polling system to ensure the location pill always loads after a refresh.
+// @version      13.0.0
+// @description  Forensics tool. Fixed "Body too long" error by switching contribution method to File Upload (Drag & Drop).
 // @author       A Pleasant Experience
 // @match        https://x.com/*
 // @match        https://twitter.com/*
@@ -22,7 +22,7 @@
 
     const TRANSLATIONS = {
         en: {
-            title: "Forensics v11.0",
+            title: "Forensics v13.0",
             labels: { location: "Location", device: "Device", id: "Perm ID", created: "Created", renamed: "Renamed", identity: "Identity", lang: "Language", type: "Type" },
             risk: { safe: "SAFE", detected: "DETECTED", anomaly: "ANOMALY", caution: "CAUTION", normal: "NORMAL", verified: "VERIFIED ID" },
             status: {
@@ -48,20 +48,23 @@
                 btn_backup: "💾 Backup JSON",
                 btn_restore: "📥 Restore JSON",
                 btn_cloud: "☁️ Update from GitHub",
+                btn_contrib: "📤 Contribute Data",
                 btn_clear: "🗑️ Clear Cache",
                 count: "Users Stored: {n}",
                 msg_cleared: "Database wiped successfully!",
                 msg_restored: "Restored {n} users.",
                 msg_cloud_ok: "Success! Added {n} users from GitHub.",
                 msg_cloud_fail: "Failed to fetch database.",
-                msg_err: "Invalid file."
+                msg_err: "Invalid file.",
+                // UPDATED MESSAGE
+                contrib_info: "1. A file (contribution.json) has been downloaded.\n2. A GitHub tab will open.\n3. DRAG & DROP the file into the comment box to upload it."
             },
             btn: { view_avatar: "View Avatar", close: "Close", retry: "Refresh Data" },
             values: { gov: "Government", unknown: "Unknown", west_asia: "West Asia", fa_script: "Farsi/Arabic" },
             lang_sel: "Lang:"
         },
         fa: {
-            title: "تحلیلگر پروفایل ۱۱.۰",
+            title: "تحلیلگر پروفایل ۱۳.۰",
             labels: { location: "موقعیت", device: "دستگاه", id: "شناسه", created: "ساخت", renamed: "تغییر نام", identity: "هویت", lang: "زبان", type: "نوع" },
             risk: { safe: "امن", detected: "هشدار", anomaly: "ناهنجاری", caution: "احتیاط", normal: "طبیعی", verified: "تایید شده" },
             status: {
@@ -87,13 +90,16 @@
                 btn_backup: "💾 بک‌آپ JSON",
                 btn_restore: "📥 بازگردانی",
                 btn_cloud: "☁️ آپدیت از گیت‌هاب",
+                btn_contrib: "📤 ارسال دیتا (مشارکت)",
                 btn_clear: "🗑️ حذف دیتا",
                 count: "ذخیره شده: {n}",
                 msg_cleared: "پایگاه داده پاک شد!",
                 msg_restored: "تعداد {n} کاربر بازیابی شد.",
                 msg_cloud_ok: "موفق! {n} کاربر از گیت‌هاب اضافه شد.",
                 msg_cloud_fail: "خطا در دریافت دیتابیس.",
-                msg_err: "فایل نامعتبر است."
+                msg_err: "فایل نامعتبر است.",
+                // UPDATED MESSAGE
+                contrib_info: "۱. یک فایل (contribution.json) دانلود شد.\n۲. صفحه گیت‌هاب باز می‌شود.\n۳. فایل دانلود شده را داخل کادر متن بکشید و رها کنید (Drag & Drop)."
             },
             btn: { view_avatar: "آواتار اصلی", close: "بستن", retry: "بروزرسانی" },
             values: { gov: "دولتی", unknown: "نامشخص", west_asia: "غرب آسیا", fa_script: "فارسی/عربی" },
@@ -105,13 +111,14 @@
 
     // --- 2. STORAGE ---
     const STORAGE_KEY = "xf_db_v1";
+    const GITHUB_REPO_ISSUES = "https://github.com/itsyebekhe/xforensics/issues/new";
     const CLOUD_DB_URL = "https://raw.githubusercontent.com/itsyebekhe/xforensics/main/database.json";
+
     let db = {};
     try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
             db = JSON.parse(saved);
-            // Auto-clean old HTML data
             let cleaned = false;
             Object.keys(db).forEach(k => { if(db[k].html) { delete db[k].html; cleaned=true; } });
             if(cleaned) saveDB();
@@ -156,6 +163,7 @@
         .xf-btn-blue { background: var(--xf-blue); color: #fff; } .xf-btn-blue:hover { background: #1a8cd8; }
         .xf-btn-green { background: var(--xf-green); color: #fff; } .xf-btn-green:hover { background: #008c5e; }
         .xf-btn-purple { background: var(--xf-purple); color: #fff; } .xf-btn-purple:hover { background: #5e35a3; }
+        .xf-btn-orange { background: var(--xf-orange); color: #000; } .xf-btn-orange:hover { background: #d4b100; }
         .xf-btn-red { background: rgba(249, 24, 128, 0.2); color: var(--xf-red); border: 1px solid var(--xf-red); } .xf-btn-red:hover { background: rgba(249, 24, 128, 0.3); }
 
         #xf-card { position: fixed; z-index: 10000; width: 320px; background: var(--xf-bg); backdrop-filter: blur(12px); border: 1px solid var(--xf-border); border-radius: 16px; padding: 16px; color: var(--xf-text); font-family: ${FONT_STACK}; box-shadow: 0 15px 40px rgba(0,0,0,0.7); opacity: 0; transform: translateY(10px); transition: 0.2s; pointer-events: none; direction: ${IS_RTL?'rtl':'ltr'}; text-align: ${IS_RTL?'right':'left'}; }
@@ -253,9 +261,10 @@
                 </select>
 
                 <button id="xf-btn-backup" class="xf-dash-btn xf-btn-blue">${TEXT.dashboard.btn_backup}</button>
-                <button id="xf-btn-cloud" class="xf-dash-btn xf-btn-purple">${TEXT.dashboard.btn_cloud}</button>
                 <button id="xf-btn-restore" class="xf-dash-btn xf-btn-green">${TEXT.dashboard.btn_restore}</button>
                 <button id="xf-btn-csv" class="xf-dash-btn xf-btn-blue" style="background:transparent;border:1px solid var(--xf-blue);color:var(--xf-blue)">${TEXT.dashboard.btn_export}</button>
+                <button id="xf-btn-cloud" class="xf-dash-btn xf-btn-purple">${TEXT.dashboard.btn_cloud}</button>
+                <button id="xf-btn-contrib" class="xf-dash-btn xf-btn-orange" style="color:#000;">${TEXT.dashboard.btn_contrib}</button>
                 <button id="xf-btn-clear" class="xf-dash-btn xf-btn-red">${TEXT.dashboard.btn_clear}</button>
 
                 <div id="xf-dash-close-btn" style="margin-top:15px;text-align:center;font-size:12px;cursor:pointer;color:#71767b;">${TEXT.btn.close}</div>
@@ -266,10 +275,34 @@
 
         document.getElementById("xf-btn-backup").onclick = backupJSON;
         document.getElementById("xf-btn-cloud").onclick = loadFromCloud;
+        document.getElementById("xf-btn-contrib").onclick = contributeData;
         document.getElementById("xf-btn-restore").onclick = () => document.getElementById("xf-restore-input").click();
         document.getElementById("xf-btn-csv").onclick = exportCSV;
         document.getElementById("xf-btn-clear").onclick = clearCache;
         document.getElementById("xf-dash-close-btn").onclick = () => { overlay.style.display = "none"; };
+    }
+
+    // --- CONTRIBUTION LOGIC ---
+    function contributeData() {
+        const count = Object.keys(db).length;
+        if (count === 0) return alert("No data to contribute.");
+
+        // 1. Download File
+        const blob = new Blob([JSON.stringify(db, null, 2)], { type: "application/json" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = `contribution.json`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // 2. Show Instructions
+        alert(TEXT.dashboard.contrib_info);
+
+        // 3. Open GitHub Issue
+        const encodedBody = encodeURIComponent(`### Database Contribution\n\n**User Count:** ${count}\n\n**Instructions:**\nI have attached my \`contribution.json\` file below by dragging and dropping it into this text box.`);
+        const issueUrl = `${GITHUB_REPO_ISSUES}?title=Database+Contribution+(${count}+Users)&body=${encodedBody}`;
+        window.open(issueUrl, '_blank');
     }
 
     // --- CLOUD UPDATE ---
@@ -335,7 +368,7 @@
         }
     }
 
-    // --- UI & INJECTION (Shared Logic) ---
+    // --- UI & INJECTION ---
     function createMiniPill(username) {
         const mini = document.createElement("span");
         mini.className = "xf-mini-pill";
@@ -387,6 +420,8 @@
 
         if (data.renamed > 0 && label === TEXT.risk.safe) { color = "var(--xf-orange)"; label = TEXT.risk.caution; pct = "40%"; }
         if (data.isIdVerified) { pct = "0%"; label = TEXT.risk.verified; color = "var(--xf-blue)"; }
+
+        // Save risk label back to data for CSV
         data.riskLabel = label;
 
         const langHtml = `
@@ -419,6 +454,7 @@
         container.querySelector('#xf-l-auto').onclick = () => setLang('auto');
         container.querySelector('#xf-l-en').onclick = () => setLang('en');
         container.querySelector('#xf-l-fa').onclick = () => setLang('fa');
+
         const retryBtn = container.querySelector('#xf-retry-btn');
         if(retryBtn) {
             retryBtn.onclick = async (e) => {
