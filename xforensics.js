@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         X Profile Forensics (v18.0)
+// @name         X Profile Forensics (v18.0 Mobile UX)
 // @namespace    http://tampermonkey.net/
 // @version      18.0.0
-// @description  Forensics tool. Moved Language Selector to Dashboard. Fixed Sidebar Button injection on Desktop.
-// @author       https://x.com/yebekhe
+// @description  Forensics tool. Mobile Fixes: Dashboard button moved to Bottom-Left FAB. Dashboard layout resized to fit small screens perfectly.
+// @author       A Pleasant Experience
 // @match        https://x.com/*
 // @match        https://twitter.com/*
 // @connect      raw.githubusercontent.com
@@ -22,7 +22,7 @@
 
     const TRANSLATIONS = {
         en: {
-            title: "Forensics v18.0",
+            title: "Forensics v19.0",
             menu_btn: "Forensics",
             labels: { location: "Location", device: "Device", id: "Perm ID", created: "Created", renamed: "Renamed", identity: "Identity", lang: "Language", type: "Type" },
             risk: { safe: "SAFE", detected: "DETECTED", anomaly: "ANOMALY", caution: "CAUTION", normal: "NORMAL", verified: "VERIFIED ID" },
@@ -69,10 +69,10 @@
             values: { gov: "Government", unknown: "Unknown", west_asia: "West Asia", fa_script: "Farsi/Arabic" },
             notes_placeholder: "Add personal notes...",
             osint_titles: { archive: "Check Wayback Machine", google: "Google Dork", lens: "Reverse Image Search" },
-            lang_sel: "Interface Language:"
+            lang_sel: "Lang:"
         },
         fa: {
-            title: "تحلیلگر پروفایل ۱۸.۰",
+            title: "تحلیلگر پروفایل ۱۹.۰",
             menu_btn: "جرم‌شناسی",
             labels: { location: "موقعیت", device: "دستگاه", id: "شناسه", created: "ساخت", renamed: "تغییر نام", identity: "هویت", lang: "زبان", type: "نوع" },
             risk: { safe: "امن", detected: "هشدار", anomaly: "ناهنجاری", caution: "احتیاط", normal: "طبیعی", verified: "تایید شده" },
@@ -119,7 +119,7 @@
             values: { gov: "دولتی", unknown: "نامشخص", west_asia: "غرب آسیا", fa_script: "فارسی/عربی" },
             notes_placeholder: "یادداشت شخصی بنویسید...",
             osint_titles: { archive: "آرشیو اینترنت", google: "جستجوی گوگل", lens: "جستجوی تصویر" },
-            lang_sel: "زبان رابط کاربری:"
+            lang_sel: "زبان:"
         }
     };
 
@@ -167,41 +167,60 @@
         .xf-mini-pill.xf-loaded { background: transparent; border: none; padding: 0 4px; font-weight: bold; }
         @keyframes xf-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 
-        /* Sidebar Button */
+        /* Native Menu Item (Desktop) */
         .xf-menu-item { display: flex; align-items: center; padding: 12px; cursor: pointer; transition: 0.2s; border-radius: 99px; margin: 4px 0; }
         .xf-menu-item:hover { background: rgba(239, 243, 244, 0.1); }
         .xf-menu-icon { width: 26px; height: 26px; margin-right: 20px; fill: currentColor; }
         .xf-menu-text { font-size: 20px; font-weight: 700; font-family: ${FONT_STACK}; color: var(--xf-text); line-height: 24px; }
 
-        /* Mobile Top Bar Icon */
-        #xf-mob-top-btn { display: flex; align-items: center; justify-content: center; margin-left: auto; margin-right: 10px; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; transition: 0.2s; }
-        #xf-mob-top-btn:hover { background: rgba(29,155,240,0.15); }
-        .xf-mob-icon { width: 22px; height: 22px; fill: var(--xf-text); }
+        /* Mobile Floating Button (Bottom Left) */
+        #xf-mob-fab {
+            position: fixed; bottom: 75px; left: 20px;
+            width: 48px; height: 48px;
+            background: var(--xf-blue); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 12px rgba(29,155,240,0.4);
+            cursor: pointer; z-index: 9000; transition: 0.2s;
+            border: 2px solid #000;
+        }
+        #xf-mob-fab:hover { transform: scale(1.1); }
+        .xf-mob-icon { width: 24px; height: 24px; fill: #fff; }
 
-        /* Dashboard */
+        /* Dashboard - Responsive Fix */
         #xf-dash-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 10001; display: none; align-items: center; justify-content: center; backdrop-filter: blur(8px); direction: ${IS_RTL?'rtl':'ltr'}; }
-        #xf-dash-box { width: 90%; max-width: 400px; max-height: 85vh; background: #000; border: 1px solid var(--xf-border); border-radius: 16px; padding: 24px; font-family: ${FONT_STACK}; box-shadow: 0 20px 50px rgba(0,0,0,0.8); color: #fff; display: flex; flex-direction: column; }
-        .xf-dash-title { font-size: 18px; font-weight: 800; margin-bottom: 16px; border-bottom: 1px solid var(--xf-border); padding-bottom: 10px; display:flex; justify-content:space-between; align-items:center; }
-        .xf-input { width: 100%; padding: 10px; margin-bottom: 12px; background: #16181c; border: 1px solid var(--xf-border); color: #fff; border-radius: 8px; outline: none; box-sizing: border-box; font-family: ${FONT_STACK}; }
-        .xf-input:focus { border-color: var(--xf-blue); }
-        .xf-dash-btn { width: 100%; padding: 10px; margin-top: 8px; border-radius: 99px; font-weight: bold; cursor: pointer; border: none; transition: 0.2s; font-family: ${FONT_STACK}; font-size: 13px; }
-        .xf-btn-blue { background: var(--xf-blue); color: #fff; } .xf-btn-blue:hover { background: #1a8cd8; }
-        .xf-btn-green { background: var(--xf-green); color: #fff; } .xf-btn-green:hover { background: #008c5e; }
-        .xf-btn-purple { background: var(--xf-purple); color: #fff; } .xf-btn-purple:hover { background: #5e35a3; }
-        .xf-btn-orange { background: var(--xf-orange); color: #000; } .xf-btn-orange:hover { background: #d4b100; }
-        .xf-btn-red { background: rgba(249, 24, 128, 0.2); color: var(--xf-red); border: 1px solid var(--xf-red); } .xf-btn-red:hover { background: rgba(249, 24, 128, 0.3); }
+        #xf-dash-box {
+            width: 95%; max-width: 400px; max-height: 80vh;
+            background: #000; border: 1px solid var(--xf-border); border-radius: 16px; padding: 16px;
+            font-family: ${FONT_STACK}; box-shadow: 0 20px 50px rgba(0,0,0,0.8); color: #fff;
+            display: flex; flex-direction: column;
+        }
+        .xf-dash-title { font-size: 18px; font-weight: 800; margin-bottom: 10px; border-bottom: 1px solid var(--xf-border); padding-bottom: 8px; display:flex; justify-content:space-between; align-items:center; }
 
-        /* User List */
-        #xf-user-list { flex: 1; overflow-y: auto; margin: 10px 0; border: 1px solid var(--xf-border); border-radius: 8px; padding: 5px; background: rgba(255,255,255,0.03); min-height: 150px; }
-        .xf-user-row { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid var(--xf-border); cursor: pointer; transition: background 0.2s; font-size: 13px; }
-        .xf-user-row:last-child { border-bottom: none; }
+        /* Buttons Grid */
+        .xf-btn-row { display: flex; gap: 8px; margin-top: 8px; }
+        .xf-input { width: 100%; padding: 8px; margin-bottom: 8px; background: #16181c; border: 1px solid var(--xf-border); color: #fff; border-radius: 8px; outline: none; box-sizing: border-box; font-family: ${FONT_STACK}; }
+        .xf-dash-btn { flex: 1; padding: 10px; border-radius: 99px; font-weight: bold; cursor: pointer; border: none; transition: 0.2s; font-family: ${FONT_STACK}; font-size: 12px; white-space: nowrap; }
+
+        /* Colors */
+        .xf-btn-blue { background: var(--xf-blue); color: #fff; }
+        .xf-btn-green { background: var(--xf-green); color: #fff; }
+        .xf-btn-purple { background: var(--xf-purple); color: #fff; }
+        .xf-btn-orange { background: var(--xf-orange); color: #000; }
+        .xf-btn-red { background: rgba(249, 24, 128, 0.2); color: var(--xf-red); border: 1px solid var(--xf-red); }
+
+        /* User List Scroll Fix */
+        #xf-user-list {
+            flex: 1; overflow-y: auto; margin: 8px 0;
+            border: 1px solid var(--xf-border); border-radius: 8px; padding: 5px;
+            background: rgba(255,255,255,0.03); min-height: 100px;
+        }
+        .xf-user-row { display: flex; justify-content: space-between; align-items: center; padding: 8px; border-bottom: 1px solid var(--xf-border); cursor: pointer; font-size: 12px; }
         .xf-user-row:hover { background: rgba(255,255,255,0.1); }
         .xf-u-name { font-weight: bold; color: var(--xf-text); }
         .xf-u-meta { font-size: 11px; color: var(--xf-dim); display: block; margin-top: 2px; }
-        .xf-u-risk { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #000; }
-        .xf-pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 12px; color: var(--xf-dim); border-top: 1px solid var(--xf-border); padding-top: 8px; }
+        .xf-u-risk { font-size: 9px; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #000; }
+        .xf-pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 5px; font-size: 11px; color: var(--xf-dim); border-top: 1px solid var(--xf-border); padding-top: 5px; }
         .xf-page-btn { cursor: pointer; padding: 4px 8px; border-radius: 4px; background: rgba(255,255,255,0.1); user-select: none; }
-        .xf-page-btn:hover { background: var(--xf-blue); color: #fff; }
 
         /* Card */
         #xf-card { position: fixed; z-index: 10000; width: 320px; background: var(--xf-bg); backdrop-filter: blur(12px); border: 1px solid var(--xf-border); border-radius: 16px; padding: 16px; color: var(--xf-text); font-family: ${FONT_STACK}; box-shadow: 0 15px 40px rgba(0,0,0,0.7); opacity: 0; transform: translateY(10px); transition: 0.2s; pointer-events: none; direction: ${IS_RTL?'rtl':'ltr'}; text-align: ${IS_RTL?'right':'left'}; }
@@ -270,10 +289,10 @@
 
     // --- DASHBOARD UI ---
     function injectNativeMenu() {
-        if (document.getElementById('xf-menu-btn') || document.getElementById('xf-mob-top-btn')) return;
+        if (document.getElementById('xf-menu-btn') || document.getElementById('xf-mob-fab')) return;
 
         if (!IS_MOBILE) {
-            // Fixed Selector for Desktop Sidebar
+            // Desktop Sidebar
             const nav = document.querySelector('nav[aria-label="Primary"]');
             if (!nav) return;
 
@@ -284,43 +303,23 @@
             item.setAttribute("role", "link");
             item.innerHTML = `
                 <div style="display:flex;align-items:center;">
-                <svg viewBox="0 0 24 24" class="xf-menu-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8 8 8zM11 7h2v6h-2zm0 8h2v2h-2z"></path></svg>
+                <svg viewBox="0 0 24 24" class="xf-menu-icon"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
                 <span class="xf-menu-text">${TEXT.menu_btn}</span>
                 </div>
             `;
             item.onclick = (e) => { e.preventDefault(); showDashboard(); };
 
-            // Insert as the 4th or 5th item (After Lists or Bookmarks)
-            // Fallback: Append to end if specific position not found
-            const bookmarks = nav.querySelector('a[href="/i/bookmarks"]');
-            if (bookmarks) {
-                bookmarks.parentNode.insertBefore(item, bookmarks.nextSibling);
-            } else {
-                nav.appendChild(item);
-            }
+            const more = nav.querySelector('[data-testid="AppTabBar_More_Menu"]');
+            if (more) more.parentNode.insertBefore(item, more);
+            else nav.appendChild(item);
 
         } else {
-            // Mobile Top Bar
-            const topBar = document.querySelector('[data-testid="TopNavBar"]');
-            if (!topBar) return;
-
-            const btn = document.createElement('div');
-            btn.id = 'xf-mob-top-btn';
-            btn.innerHTML = `<svg viewBox="0 0 24 24" class="xf-mob-icon" style="fill:var(--xf-text)"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>`;
-            btn.onclick = showDashboard;
-
-            if (topBar.children.length > 0) {
-                const rightSide = topBar.children[0].lastElementChild;
-                if (rightSide) {
-                   rightSide.insertBefore(btn, rightSide.firstChild);
-                   return;
-                }
-            }
-
-            btn.style.position = 'absolute';
-            btn.style.right = '50px';
-            btn.style.top = '10px';
-            topBar.appendChild(btn);
+            // Mobile FAB (Bottom-Left)
+            const fab = document.createElement('div');
+            fab.id = "xf-mob-fab";
+            fab.innerHTML = `<svg viewBox="0 0 24 24" class="xf-mob-icon" style="fill:#fff"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>`;
+            fab.onclick = showDashboard;
+            document.body.appendChild(fab);
         }
     }
 
@@ -422,18 +421,20 @@
                 <div id="xf-user-list"></div>
                 <div id="xf-pagination" class="xf-pagination"></div>
 
-                <div style="display:flex;gap:5px;margin-top:10px;">
-                    <button id="xf-btn-backup" class="xf-dash-btn xf-btn-blue" style="flex:1;">${TEXT.dashboard.btn_backup}</button>
-                    <button id="xf-btn-cloud" class="xf-dash-btn xf-btn-purple" style="flex:1;">${TEXT.dashboard.btn_cloud}</button>
+                <div class="xf-btn-row">
+                    <button id="xf-btn-backup" class="xf-dash-btn xf-btn-blue">${TEXT.dashboard.btn_backup}</button>
+                    <button id="xf-btn-cloud" class="xf-dash-btn xf-btn-purple">${TEXT.dashboard.btn_cloud}</button>
                 </div>
-                <div style="display:flex;gap:5px;">
-                    <button id="xf-btn-restore" class="xf-dash-btn xf-btn-green" style="flex:1;">${TEXT.dashboard.btn_restore}</button>
-                    <button id="xf-btn-contrib" class="xf-dash-btn xf-btn-orange" style="flex:1;color:#000;">${TEXT.dashboard.btn_contrib}</button>
+                <div class="xf-btn-row">
+                    <button id="xf-btn-restore" class="xf-dash-btn xf-btn-green">${TEXT.dashboard.btn_restore}</button>
+                    <button id="xf-btn-contrib" class="xf-dash-btn xf-btn-orange" style="color:#000;">${TEXT.dashboard.btn_contrib}</button>
                 </div>
-                <button id="xf-btn-csv" class="xf-dash-btn xf-btn-blue" style="background:transparent;border:1px solid var(--xf-blue);color:var(--xf-blue)">${TEXT.dashboard.btn_export}</button>
-                <button id="xf-btn-clear" class="xf-dash-btn xf-btn-red">${TEXT.dashboard.btn_clear}</button>
+                <div class="xf-btn-row">
+                    <button id="xf-btn-csv" class="xf-dash-btn xf-btn-blue" style="background:transparent;border:1px solid var(--xf-blue);color:var(--xf-blue)">${TEXT.dashboard.btn_export}</button>
+                    <button id="xf-btn-clear" class="xf-dash-btn xf-btn-red">${TEXT.dashboard.btn_clear}</button>
+                </div>
 
-                <div id="xf-dash-close-btn" style="margin-top:15px;text-align:center;font-size:12px;cursor:pointer;color:#71767b;">${TEXT.btn.close}</div>
+                <div id="xf-dash-close-btn" style="margin-top:10px;text-align:center;font-size:12px;cursor:pointer;color:#71767b;">${TEXT.btn.close}</div>
             </div>
         `;
 
@@ -450,7 +451,6 @@
         document.getElementById("xf-btn-clear").onclick = clearCache;
         document.getElementById("xf-dash-close-btn").onclick = () => { overlay.style.display = "none"; };
 
-        // Bind Language Switcher in Dashboard
         document.getElementById('xf-dash-l-auto').onclick = () => setLang('auto');
         document.getElementById('xf-dash-l-en').onclick = () => setLang('en');
         document.getElementById('xf-dash-l-fa').onclick = () => setLang('fa');
@@ -458,7 +458,7 @@
         renderUserList(db);
     }
 
-    // --- CLOUD & DATA ---
+    // --- CLOUD UPDATE ---
     function loadFromCloud() {
         GM_xmlhttpRequest({
             method: "GET", url: CLOUD_DB_URL,
@@ -477,6 +477,7 @@
         });
     }
 
+    // --- CONTRIBUTION LOGIC ---
     function contributeData() {
         const count = Object.keys(db).length;
         if (count === 0) return alert("No data to contribute.");
