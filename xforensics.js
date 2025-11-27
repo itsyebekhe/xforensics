@@ -124,22 +124,39 @@
     const GITHUB_REPO_ISSUES = "https://github.com/itsyebekhe/xforensics/issues/new";
     const CLOUD_DB_URL = "https://raw.githubusercontent.com/itsyebekhe/xforensics/main/database.json";
 
+    let saveTimeout;
+
     let db = {};
+
+    function saveDB() {
+        if (saveTimeout) clearTimeout(saveTimeout);
+        // استفاده از Debounce: ذخیره سازی با 2 ثانیه تاخیر انجام می‌شود
+        // تا از فریز شدن مرورگر هنگام اسکرول جلوگیری شود
+        saveTimeout = setTimeout(() => {
+            const keys = Object.keys(db);
+            if (keys.length > 20000) { 
+                keys.slice(0, 2000).forEach(k => delete db[k]); 
+            }
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
+        }, 2000);
+    }
+
     try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
             db = JSON.parse(saved);
             let cleaned = false;
-            Object.keys(db).forEach(k => { if(db[k].html) { delete db[k].html; cleaned=true; } });
+            // پاکسازی فیلدهای قدیمی html برای کاهش حجم
+            Object.keys(db).forEach(k => { 
+                if(db[k].html) { 
+                    delete db[k].html; 
+                    cleaned = true; 
+                } 
+            });
+            // اگر پاکسازی انجام شد، نسخه جدید ذخیره شود
             if(cleaned) saveDB();
         }
     } catch (e) { console.error("XF DB Load Error", e); }
-
-    function saveDB() {
-        const keys = Object.keys(db);
-        if (keys.length > 20000) { keys.slice(0, 2000).forEach(k => delete db[k]); }
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
-    }
 
     // --- 3. CONFIG & STYLES ---
     const CONFIG = {
@@ -659,41 +676,84 @@
     }
 
     function injectLists() {
-        const targets = document.querySelectorAll('article[data-testid="tweet"], [data-testid="UserCell"]');
+        // تغییر مهم: اضافه کردن :not([data-xf])
+        // این کار باعث می‌شود فقط روی آیتم‌های جدید لوپ بزنیم، نه هزاران آیتم قبلی
+        const targets = document.querySelectorAll('article[data-testid="tweet"]:not([data-xf]), [data-testid="UserCell"]:not([data-xf])');
+
+        // اگر تارگت جدیدی نیست، تابع را متوقف کن تا CPU مصرف نشود
+        if (targets.length === 0) return;
+
         targets.forEach(node => {
+            // این شرط دیگر نیاز نیست چون در querySelector فیلتر کردیم، اما برای اطمینان می‌ماند
             if (node.getAttribute('data-xf')) return;
+
             let userLink = node.querySelector('a[href^="/"][role="link"]');
             if (!userLink) return;
+
             const username = userLink.getAttribute('href').replace('/', '');
             if (!username) return;
+
+            // علامت‌گذاری سریع نود برای جلوگیری از پردازش مجدد در دور بعدی
+            node.setAttribute('data-xf', 'true');
+
+            // بررسی اینکه آیا پیل قبلا وجود دارد یا خیر
             if (node.querySelector('.xf-mini-pill')) return;
 
             const mini = createMiniPill(username);
+
+            // تلاش برای پیدا کردن مکان مناسب
             let nameRow = node.querySelector('div[data-testid="User-Name"] > div:first-child');
             if (!nameRow) {
                 const allDirs = node.querySelectorAll('div[dir="ltr"]');
                 if (allDirs.length > 0) nameRow = allDirs[0];
             }
-            if (nameRow) { nameRow.appendChild(mini); node.setAttribute('data-xf', 'true'); }
+
+            if (nameRow) {
+                nameRow.appendChild(mini);
+            }
         });
     }
 
     // POLLING & INIT
+
+    //یک ثانیه‌ای برای پرفورمنس خیلی کم بود 
     setInterval(() => {
-        const user = getUser();
-        if (user && document.querySelector('[data-testid="UserProfileHeader_Items"]') && !document.getElementById("xf-pill")) inject(user);
+        // فقط برای اطمینان از اینکه اگر چیزی جا افتاد، انجام شود
         injectLists();
         injectNativeMenu();
-    }, 1000); // 1s Poll Backup
+    }, 5000);
 
     setTimeout(initDashboard, 2000);
 
-    new MutationObserver(() => {
-        if (location.href !== lastUrl) { lastUrl = location.href; document.getElementById("xf-pill")?.remove(); if(tooltipEl) tooltipEl.className=""; }
-        const user = getUser();
-        if (user && document.querySelector('[data-testid="UserProfileHeader_Items"]') && !document.getElementById("xf-pill")) inject(user);
-        injectLists();
-        injectNativeMenu();
-    }).observe(document.body, {childList:true, subtree:true});
+    // Observer بهینه شده با Throttle
+    let observerTimeout;
+    const observer = new MutationObserver((mutations) => {
+        // اگر تغییرات مربوط به URL بود هندل شود
+        if (location.href !== lastUrl) {
+            lastUrl = location.href;
+            document.getElementById("xf-pill")?.remove();
+            if(tooltipEl) tooltipEl.className="";
+            const user = getUser();
+            if (user) inject(user); // تابع inject را فقط موقع تغییر صفحه صدا بزنید
+        }
+
+        // برای تغییرات DOM، اجرا را محدود می‌کنیم (Throttling)
+        if (observerTimeout) return;
+
+        observerTimeout = setTimeout(() => {
+            const user = getUser();
+            // تزریق هدر پروفایل فقط اگر نیاز است
+            if (user && document.querySelector('[data-testid="UserProfileHeader_Items"]') && !document.getElementById("xf-pill")) {
+                inject(user);
+            }
+
+            injectLists();
+            injectNativeMenu();
+
+            observerTimeout = null;
+        }, 500); // فقط هر 500 میلی‌ثانیه یکبار اجرا شود، نه با هر پیکسل تغییر
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
 
 })();
