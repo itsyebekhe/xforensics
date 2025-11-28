@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         X Profile Forensics (v18.0 Mobile UX)
+// @name         X Profile Forensics (v18.1 Mass Block)
 // @namespace    http://tampermonkey.net/
-// @version      18.0.0
-// @description  Forensics tool. Mobile Fixes: Dashboard button moved to Bottom-Left FAB. Dashboard layout resized to fit small screens perfectly.
+// @version      18.1.0
+// @description  Forensics tool. Added: Mass Block feature in Dashboard.
 // @author       A Pleasant Experience
 // @match        https://x.com/*
 // @match        https://twitter.com/*
@@ -22,7 +22,7 @@
 
     const TRANSLATIONS = {
         en: {
-            title: "Forensics v18.0",
+            title: "Forensics v18.1",
             menu_btn: "Forensics",
             labels: { location: "Location", device: "Device", id: "Perm ID", created: "Created", renamed: "Renamed", identity: "Identity", lang: "Language", type: "Type" },
             risk: { safe: "SAFE", detected: "DETECTED", anomaly: "ANOMALY", caution: "CAUTION", normal: "NORMAL", verified: "VERIFIED ID" },
@@ -52,6 +52,7 @@
                 btn_cloud: "☁️ Update from GitHub",
                 btn_contrib: "📤 Contribute Data",
                 btn_clear: "🗑️ Clear Cache",
+                btn_block: "🚫 Mass Block Listed", // NEW
                 count: "Users Stored: {n}",
                 list_header: "User List (Click to Visit)",
                 list_empty: "No users found matching filters.",
@@ -63,6 +64,9 @@
                 msg_cloud_ok: "Success! Added {n} users from GitHub.",
                 msg_cloud_fail: "Failed to fetch database.",
                 msg_err: "Invalid file.",
+                msg_block_conf: "⚠️ WARNING ⚠️\n\nYou are about to BLOCK {n} users currently visible in the list.\n\nProcess will take some time to avoid rate limits.\nContinue?", // NEW
+                msg_blocking: "Blocking {c}/{t}...", // NEW
+                msg_block_done: "Process Complete. Blocked {n} users.", // NEW
                 contrib_info: "1. A file (contribution.json) has been downloaded.\n2. A GitHub tab will open.\n3. DRAG & DROP the file into the comment box to upload it."
             },
             btn: { view_avatar: "View Avatar", close: "Close", retry: "Refresh Data" },
@@ -72,7 +76,7 @@
             lang_sel: "Lang:"
         },
         fa: {
-            title: "تحلیلگر پروفایل ۱۸.۰",
+            title: "تحلیلگر پروفایل ۱۸.۱",
             menu_btn: "جرم‌شناسی",
             labels: { location: "موقعیت", device: "دستگاه", id: "شناسه", created: "ساخت", renamed: "تغییر نام", identity: "هویت", lang: "زبان", type: "نوع" },
             risk: { safe: "امن", detected: "هشدار", anomaly: "ناهنجاری", caution: "احتیاط", normal: "طبیعی", verified: "تایید شده" },
@@ -102,6 +106,7 @@
                 btn_cloud: "☁️ آپدیت از گیت‌هاب",
                 btn_contrib: "📤 ارسال دیتا (مشارکت)",
                 btn_clear: "🗑️ حذف دیتا",
+                btn_block: "🚫 مسدودسازی لیست", // NEW
                 count: "ذخیره شده: {n}",
                 list_header: "لیست کاربران (برای مشاهده کلیک کنید)",
                 list_empty: "کاربری با این مشخصات یافت نشد.",
@@ -113,6 +118,9 @@
                 msg_cloud_ok: "موفق! {n} کاربر از گیت‌هاب اضافه شد.",
                 msg_cloud_fail: "خطا در دریافت دیتابیس.",
                 msg_err: "فایل نامعتبر است.",
+                msg_block_conf: "⚠️ هشدار ⚠️\n\nشما در حال مسدود کردن (Block) تعداد {n} کاربر هستید که در لیست فیلتر شده‌اند.\n\nاین فرآیند برای جلوگیری از محدودیت توییتر زمان‌بر است.\nادامه می‌دهید؟", // NEW
+                msg_blocking: "مسدودسازی {c} از {t}...", // NEW
+                msg_block_done: "پایان! {n} کاربر بلاک شدند.", // NEW
                 contrib_info: "۱. یک فایل (contribution.json) دانلود شد.\n۲. صفحه گیت‌هاب باز می‌شود.\n۳. فایل دانلود شده را داخل کادر متن بکشید و رها کنید (Drag & Drop)."
             },
             btn: { view_avatar: "آواتار اصلی", close: "بستن", retry: "بروزرسانی" },
@@ -131,13 +139,10 @@
     const CLOUD_DB_URL = "https://raw.githubusercontent.com/itsyebekhe/xforensics/main/database.json";
 
     let saveTimeout;
-
     let db = {};
 
     function saveDB() {
         if (saveTimeout) clearTimeout(saveTimeout);
-        // استفاده از Debounce: ذخیره سازی با 2 ثانیه تاخیر انجام می‌شود
-        // تا از فریز شدن مرورگر هنگام اسکرول جلوگیری شود
         saveTimeout = setTimeout(() => {
             const keys = Object.keys(db);
             if (keys.length > 20000) { 
@@ -152,14 +157,12 @@
         if (saved) {
             db = JSON.parse(saved);
             let cleaned = false;
-            // پاکسازی فیلدهای قدیمی html برای کاهش حجم
             Object.keys(db).forEach(k => { 
                 if(db[k].html) { 
                     delete db[k].html; 
                     cleaned = true; 
                 } 
             });
-            // اگر پاکسازی انجام شد، نسخه جدید ذخیره شود
             if(cleaned) saveDB();
         }
     } catch (e) { console.error("XF DB Load Error", e); }
@@ -203,7 +206,7 @@
         #xf-mob-fab:hover { transform: scale(1.1); }
         .xf-mob-icon { width: 24px; height: 24px; fill: #fff; }
 
-        /* Dashboard - Responsive Fix */
+        /* Dashboard */
         #xf-dash-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 10001; display: none; align-items: center; justify-content: center; backdrop-filter: blur(8px); direction: ${IS_RTL?'rtl':'ltr'}; }
         #xf-dash-box {
             width: 95%; max-width: 400px; max-height: 80vh;
@@ -224,6 +227,7 @@
         .xf-btn-purple { background: var(--xf-purple); color: #fff; }
         .xf-btn-orange { background: var(--xf-orange); color: #000; }
         .xf-btn-red { background: rgba(249, 24, 128, 0.2); color: var(--xf-red); border: 1px solid var(--xf-red); }
+        .xf-btn-red:hover { background: var(--xf-red); color: #fff; }
 
         /* User List Scroll Fix */
         #xf-user-list {
@@ -352,15 +356,11 @@
         document.body.appendChild(input);
     }
 
-    function renderUserList(db) {
-        const listContainer = document.getElementById('xf-user-list');
-        const paginationContainer = document.getElementById('xf-pagination');
-        if (!listContainer) return;
-
-        listContainer.innerHTML = '';
-        const locFilter = document.getElementById("xf-filter-loc").value.toLowerCase();
-        const riskFilter = document.getElementById("xf-filter-risk").value;
-        const searchFilter = document.getElementById("xf-search-user").value.toLowerCase();
+    // New helper to get filtered users logic centrally
+    function getFilteredUsers() {
+        const locFilter = document.getElementById("xf-filter-loc")?.value.toLowerCase() || "";
+        const riskFilter = document.getElementById("xf-filter-risk")?.value || "ALL";
+        const searchFilter = document.getElementById("xf-search-user")?.value.toLowerCase() || "";
 
         const allKeys = Object.keys(db).reverse();
         const filteredKeys = [];
@@ -375,6 +375,16 @@
 
             filteredKeys.push(user);
         }
+        return filteredKeys;
+    }
+
+    function renderUserList(db) {
+        const listContainer = document.getElementById('xf-user-list');
+        const paginationContainer = document.getElementById('xf-pagination');
+        if (!listContainer) return;
+
+        listContainer.innerHTML = '';
+        const filteredKeys = getFilteredUsers(); // Use helper
 
         const totalPages = Math.ceil(filteredKeys.length / ITEMS_PER_PAGE) || 1;
         if (currentPage > totalPages) currentPage = 1;
@@ -450,6 +460,9 @@
                     <button id="xf-btn-csv" class="xf-dash-btn xf-btn-blue" style="background:transparent;border:1px solid var(--xf-blue);color:var(--xf-blue)">${TEXT.dashboard.btn_export}</button>
                     <button id="xf-btn-clear" class="xf-dash-btn xf-btn-red">${TEXT.dashboard.btn_clear}</button>
                 </div>
+                <div class="xf-btn-row">
+                     <button id="xf-btn-block" class="xf-dash-btn xf-btn-red" style="border:1px solid #fff;background:#420000;">${TEXT.dashboard.btn_block}</button>
+                </div>
 
                 <div id="xf-dash-close-btn" style="margin-top:10px;text-align:center;font-size:12px;cursor:pointer;color:#71767b;">${TEXT.btn.close}</div>
             </div>
@@ -466,6 +479,7 @@
         document.getElementById("xf-btn-restore").onclick = () => document.getElementById("xf-restore-input").click();
         document.getElementById("xf-btn-csv").onclick = exportCSV;
         document.getElementById("xf-btn-clear").onclick = clearCache;
+        document.getElementById("xf-btn-block").onclick = handleMassBlock; // NEW
         document.getElementById("xf-dash-close-btn").onclick = () => { overlay.style.display = "none"; };
 
         document.getElementById('xf-dash-l-auto').onclick = () => setLang('auto');
@@ -473,6 +487,52 @@
         document.getElementById('xf-dash-l-fa').onclick = () => setLang('fa');
 
         renderUserList(db);
+    }
+
+    // --- MASS BLOCK ---
+    async function handleMassBlock() {
+        const usersToBlock = getFilteredUsers(); // Logic separated to helper
+        if(usersToBlock.length === 0) return;
+
+        if(!confirm(TEXT.dashboard.msg_block_conf.replace("{n}", usersToBlock.length))) return;
+
+        const btn = document.getElementById("xf-btn-block");
+        const originalText = btn.innerText;
+        let successCount = 0;
+
+        for (let i = 0; i < usersToBlock.length; i++) {
+            const username = usersToBlock[i];
+            const userId = db[username].data.id;
+            
+            btn.innerText = TEXT.dashboard.msg_blocking.replace("{c}", i + 1).replace("{t}", usersToBlock.length);
+            
+            try {
+                await performBlock(userId);
+                successCount++;
+            } catch (e) {
+                console.error("Block failed for", username, e);
+            }
+            // Delay to prevent rate limiting (1.2 seconds)
+            await new Promise(r => setTimeout(r, 1200));
+        }
+
+        btn.innerText = originalText;
+        alert(TEXT.dashboard.msg_block_done.replace("{n}", successCount));
+    }
+
+    async function performBlock(userId) {
+        const body = new URLSearchParams();
+        body.append("user_id", userId);
+        
+        await fetch("https://x.com/i/api/1.1/blocks/create.json", {
+            method: "POST",
+            headers: {
+                "authorization": `Bearer ${CONFIG.bearerToken}`,
+                "x-csrf-token": getCsrf(),
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            body: body
+        });
     }
 
     // --- CLOUD UPDATE ---
@@ -528,14 +588,11 @@
     }
 
     function exportCSV() {
-        const locFilter = document.getElementById("xf-filter-loc").value.toLowerCase();
-        const riskFilter = document.getElementById("xf-filter-risk").value;
+        const keys = getFilteredUsers(); // Use filtered list for CSV too
         let csv = "\uFEFFUsername,ID,Location,Device,Risk,Created,Link\n";
-        Object.keys(db).forEach(user => {
+        keys.forEach(user => {
             const entry = db[user].data;
             const riskTag = entry.riskLabel;
-            if (locFilter && !entry.country.toLowerCase().includes(locFilter)) return;
-            if (riskFilter !== "ALL" && riskTag !== riskFilter) return;
             const safeDev = `"${entry.deviceFull.replace(/"/g, '""')}"`;
             csv += `${user},${entry.id},${entry.country},${safeDev},${riskTag},${entry.created},https://x.com/${user}\n`;
         });
@@ -757,82 +814,55 @@
     }
 
     function injectLists() {
-        // تغییر مهم: اضافه کردن :not([data-xf])
-        // این کار باعث می‌شود فقط روی آیتم‌های جدید لوپ بزنیم، نه هزاران آیتم قبلی
         const targets = document.querySelectorAll('article[data-testid="tweet"]:not([data-xf]), [data-testid="UserCell"]:not([data-xf])');
-
-        // اگر تارگت جدیدی نیست، تابع را متوقف کن تا CPU مصرف نشود
         if (targets.length === 0) return;
 
         targets.forEach(node => {
-            // این شرط دیگر نیاز نیست چون در querySelector فیلتر کردیم، اما برای اطمینان می‌ماند
             if (node.getAttribute('data-xf')) return;
-
             let userLink = node.querySelector('a[href^="/"][role="link"]');
             if (!userLink) return;
 
             const username = userLink.getAttribute('href').replace('/', '');
             if (!username) return;
 
-            // علامت‌گذاری سریع نود برای جلوگیری از پردازش مجدد در دور بعدی
             node.setAttribute('data-xf', 'true');
-
-            // بررسی اینکه آیا پیل قبلا وجود دارد یا خیر
             if (node.querySelector('.xf-mini-pill')) return;
 
             const mini = createMiniPill(username);
-
-            // تلاش برای پیدا کردن مکان مناسب
             let nameRow = node.querySelector('div[data-testid="User-Name"] > div:first-child');
             if (!nameRow) {
                 const allDirs = node.querySelectorAll('div[dir="ltr"]');
                 if (allDirs.length > 0) nameRow = allDirs[0];
             }
-
-            if (nameRow) {
-                nameRow.appendChild(mini);
-            }
+            if (nameRow) { nameRow.appendChild(mini); }
         });
     }
 
     // POLLING & INIT
-
-    //یک ثانیه‌ای برای پرفورمنس خیلی کم بود 
     setInterval(() => {
-        // فقط برای اطمینان از اینکه اگر چیزی جا افتاد، انجام شود
         injectLists();
         injectNativeMenu();
     }, 5000);
 
     setTimeout(initDashboard, 2000);
 
-    // Observer بهینه شده با Throttle
     let observerTimeout;
     const observer = new MutationObserver((mutations) => {
-        // اگر تغییرات مربوط به URL بود هندل شود
         if (location.href !== lastUrl) {
             lastUrl = location.href;
             document.getElementById("xf-pill")?.remove();
             if(tooltipEl) tooltipEl.className="";
             const user = getUser();
-            if (user) inject(user); // تابع inject را فقط موقع تغییر صفحه صدا بزنید
+            if (user) inject(user);
         }
-
-        // برای تغییرات DOM، اجرا را محدود می‌کنیم (Throttling)
         if (observerTimeout) return;
-
         observerTimeout = setTimeout(() => {
             const user = getUser();
-            // تزریق هدر پروفایل فقط اگر نیاز است
-            if (user && document.querySelector('[data-testid="UserProfileHeader_Items"]') && !document.getElementById("xf-pill")) {
-                inject(user);
-            }
-
+            if (user && document.querySelector('[data-testid="UserProfileHeader_Items"]') && !document.getElementById("xf-pill")) { inject(user); }
             injectLists();
             injectNativeMenu();
-
             observerTimeout = null;
-        }, 500); // فقط هر 500 میلی‌ثانیه یکبار اجرا شود، نه با هر پیکسل تغییر
+        }, 500);
     });
 
     observer.observe(document.body, { childList: true, subtree: true });
