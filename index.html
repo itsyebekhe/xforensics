@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X Forensics | رصدخانه ناهنجاری‌ها</title>
+    <meta name="description" content="لیست حساب‌های کاربری توییتر با الگوی اتصال غیرعادی از ایران.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <!-- Vazirmatn Font (Farsi Digits) -->
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/misc/Farsi-Digits/Vazirmatn-FD-font-face.css" rel="stylesheet" type="text/css" />
+    <!-- Vazirmatn Font -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@33.003/misc/Farsi-Digits/Vazirmatn-FD-font-face.css" rel="stylesheet" type="text/css" />
 
     <script>
         tailwind.config = {
@@ -19,7 +18,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Vazirmatn FD"', 'Vazirmatn', 'sans-serif'],
+                        sans: ['Vazirmatn', 'sans-serif'],
                     },
                     colors: {
                         slate: { 850: '#151f32', 950: '#020617' }
@@ -30,8 +29,8 @@
     </script>
 
     <style>
-        body { font-family: 'Vazirmatn FD', sans-serif; }
-        input, select, button, textarea { font-family: 'Vazirmatn FD', sans-serif !important; }
+        body { font-family: 'Vazirmatn', sans-serif; }
+        input, select, button, textarea { font-family: 'Vazirmatn', sans-serif !important; }
         .dir-ltr { direction: ltr; text-align: left; }
         .loader {
             border: 3px solid rgba(255,255,255,0.1);
@@ -51,7 +50,7 @@
 </head>
 <body class="bg-slate-950 text-slate-200 min-h-screen flex flex-col font-sans">
 
-    <!-- Lightbox -->
+    <!-- Lightbox Overlay -->
     <div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4 cursor-zoom-out transition-opacity duration-300 opacity-0">
         <img id="lightbox-img" src="" class="max-w-full max-h-full rounded-lg shadow-2xl transform scale-95 transition-transform duration-300" alt="Zoomed Avatar">
         <button onclick="closeLightbox()" class="absolute top-6 right-6 p-3 bg-white/10 rounded-full text-white hover:bg-white/20 transition-colors">
@@ -80,6 +79,7 @@
     <!-- Main Content -->
     <main class="flex-grow container mx-auto px-4 py-12">
         
+        <!-- Header -->
         <div class="text-center mb-12">
             <h1 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">
                 رصدخانه <span class="text-red-600">ناهنجاری‌های</span> توییتر
@@ -89,13 +89,15 @@
             </p>
         </div>
 
+        <!-- Loading Spinner -->
         <div id="loading" class="flex justify-center py-20">
             <div class="loader w-12 h-12 border-4"></div>
         </div>
 
+        <!-- Content (Hidden until loaded) -->
         <div id="app-content" class="hidden">
             
-            <!-- Stats -->
+            <!-- Stats Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
                 <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 relative overflow-hidden">
                     <div class="relative z-10">
@@ -122,20 +124,6 @@
                 </div>
             </div>
 
-            <!-- Chart Section -->
-            <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800 mb-10 shadow-lg">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-lg font-bold text-white flex items-center gap-2 font-sans">
-                        <span class="w-2 h-6 bg-blue-500 rounded-full"></span>
-                        تحلیل زمانی ساخت اکانت‌ها
-                    </h2>
-                    <span class="text-xs text-slate-500 bg-slate-950 px-3 py-1 rounded-lg border border-slate-800">توزیع سالانه</span>
-                </div>
-                <div class="relative h-64 w-full">
-                    <canvas id="creationChart"></canvas>
-                </div>
-            </div>
-
             <!-- Toolbar -->
             <div class="flex flex-col lg:flex-row gap-4 mb-8 bg-slate-900 p-4 rounded-2xl border border-slate-800">
                 <div class="relative flex-grow">
@@ -155,7 +143,11 @@
             </div>
 
             <!-- Results Grid -->
-            <div id="results-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            <div id="results-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards injected via JS -->
+            </div>
+
+            <!-- Pagination -->
             <div id="pagination" class="flex justify-center items-center gap-4 mt-12 text-sm text-slate-400 font-sans"></div>
 
         </div>
@@ -163,47 +155,54 @@
         <!-- Footer -->
         <div class="mt-20 text-center text-xs text-slate-500 max-w-3xl mx-auto border-t border-slate-800 pt-8 leading-6 font-medium">
             <p class="mb-2 font-bold text-slate-300">⚠️ سلب مسئولیت حقوقی و فنی</p>
-            <p>این اطلاعات صرفاً بر اساس داده‌های عمومی (Public API) شبکه اجتماعی ایکس استخراج شده است. وجود نام یک حساب در این لیست لزوماً به معنای وابستگی سازمانی نیست، اما نشان‌دهنده یک الگوی اتصال غیرعادی (اتصال مستقیم از ایران) است.</p>
+            <p>این اطلاعات صرفاً بر اساس داده‌های عمومی (Public API) شبکه اجتماعی ایکس استخراج شده است. وجود نام یک حساب در این لیست لزوماً به معنای وابستگی سازمانی نیست، اما نشان‌دهنده یک الگوی اتصال غیرعادی (اتصال مستقیم از ایران) است که می‌تواند ناشی از سیم‌کارت‌های خاص یا تانلینگ باشد.</p>
         </div>
     </main>
 
     <script>
+        // CONFIGURATION
         const DB_URL = "https://raw.githubusercontent.com/itsyebekhe/xforensics/main/database.json";
         
         let allData = [];
         let filteredData = [];
         let currentPage = 1;
         const itemsPerPage = 30;
-        let chartInstance = null;
 
-        // --- HELPERS ---
-        function toEnglishDigits(str) {
-            if (!str) return "";
-            return str.replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));
-        }
-
-        // --- LIGHTBOX ---
+        // --- LIGHTBOX LOGIC ---
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
+
         function openLightbox(src) {
+            // Use 'orig' quality instead of 'normal' for high-res
             const highRes = src.replace("_normal", "_orig").replace("_400x400", "_orig");
             lightboxImg.src = highRes;
             lightbox.classList.remove('hidden');
-            setTimeout(() => { lightbox.classList.remove('opacity-0'); lightboxImg.classList.remove('scale-95'); lightboxImg.classList.add('scale-100'); }, 10);
-            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden'; // Lock scroll
         }
+
         function closeLightbox() {
             lightbox.classList.add('opacity-0');
             lightboxImg.classList.remove('scale-100');
             lightboxImg.classList.add('scale-95');
-            setTimeout(() => { lightbox.classList.add('hidden'); document.body.style.overflow = ''; }, 300);
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
         }
+
+        // Close on background click or ESC
         lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
         window.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
 
-        // --- INIT ---
+        // --- FETCH DATA ---
         async function init() {
             try {
+                // Add cache buster
                 const response = await fetch(`${DB_URL}?t=${Date.now()}`);
                 const json = await response.json();
                 processData(json);
@@ -211,37 +210,30 @@
                 document.getElementById('app-content').classList.remove('hidden');
             } catch (error) {
                 console.error("Error loading database:", error);
-                document.getElementById('loading').innerHTML = `<p class="text-red-500 font-bold">خطا در دریافت دیتابیس.</p>`;
+                document.getElementById('loading').innerHTML = `<p class="text-red-500 font-bold">خطا در دریافت دیتابیس. لطفا بعدا تلاش کنید.</p>`;
             }
         }
 
-        // --- PROCESS ---
+        // --- PROCESS DATA (Filter & Stats) ---
         function processData(rawData) {
             allData = [];
             let stats = { total: 0, android: 0, iphone: 0 };
-            let years = {}; 
 
             for (const [username, info] of Object.entries(rawData)) {
                 const d = info.data;
                 if (!d) continue;
 
+                // Logic: Location = Iran/West Asia AND Accurate = true
                 const loc = d.countryCode || "";
                 const isAccurate = d.isAccurate || false;
                 const isTarget = (loc === "Iran" || loc === "West Asia");
 
                 if (isTarget && isAccurate === true) {
+                    // Calculate Stats
                     stats.total++;
                     const dev = d.device || "";
                     if (dev.toLowerCase().includes("android")) stats.android++;
                     else if (dev.toLowerCase().includes("iphone")) stats.iphone++;
-
-                    const dateStr = d.created || "";
-                    const cleanDateStr = toEnglishDigits(dateStr);
-                    const yearMatch = cleanDateStr.match(/\b(20\d{2}|19\d{2})\b/);
-                    if (yearMatch) {
-                        const year = yearMatch[0];
-                        years[year] = (years[year] || 0) + 1;
-                    }
 
                     allData.push({
                         username: username,
@@ -250,11 +242,12 @@
                         device: d.device || "Unknown",
                         location: d.country || loc,
                         created: d.created || "-",
-                        raw_created: cleanDateStr
+                        raw_created: new Date(d.created).getTime() || 0
                     });
                 }
             }
 
+            // Update Stats UI
             document.getElementById('stat-total').textContent = stats.total.toLocaleString('fa-IR');
             document.getElementById('stat-android').textContent = stats.android.toLocaleString('fa-IR');
             document.getElementById('stat-iphone').textContent = stats.iphone.toLocaleString('fa-IR');
@@ -267,62 +260,8 @@
             document.getElementById('stat-iphone-pct').textContent = iphonePct.toLocaleString('fa-IR') + '%';
             document.getElementById('bar-iphone').style.width = iphonePct + '%';
 
-            renderChart(years);
+            // Initial Filter
             filterAndRender();
-        }
-
-        // --- CHART ---
-        function renderChart(yearsData) {
-            const ctx = document.getElementById('creationChart').getContext('2d');
-            if (chartInstance) chartInstance.destroy();
-            
-            const labels = Object.keys(yearsData).sort();
-            const dataPoints = labels.map(y => yearsData[y]);
-
-            Chart.defaults.font.family = '"Vazirmatn FD", sans-serif';
-            Chart.defaults.color = '#94a3b8';
-
-            chartInstance = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'تعداد اکانت',
-                        data: dataPoints,
-                        backgroundColor: 'rgba(59, 130, 246, 0.6)',
-                        borderColor: 'rgba(59, 130, 246, 1)',
-                        borderWidth: 1,
-                        borderRadius: 4,
-                        hoverBackgroundColor: 'rgba(59, 130, 246, 0.9)',
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            backgroundColor: '#0f172a',
-                            titleColor: '#fff',
-                            bodyColor: '#cbd5e1',
-                            padding: 12,
-                            borderColor: '#1e293b',
-                            borderWidth: 1,
-                            displayColors: false,
-                            callbacks: { title: (c) => `سال ${c[0].label}` }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            grid: { color: 'rgba(255, 255, 255, 0.05)' }
-                        },
-                        x: {
-                            grid: { display: false }
-                        }
-                    }
-                }
-            });
         }
 
         // --- FILTER & SORT ---
@@ -330,21 +269,21 @@
             const query = document.getElementById('search-input').value.toLowerCase();
             const sort = document.getElementById('sort-select').value;
 
+            // Filter
             filteredData = allData.filter(item => 
                 item.username.toLowerCase().includes(query) || 
                 item.id.includes(query)
             );
 
+            // Sort (ID based = Newest)
             filteredData.sort((a, b) => {
-                const idA = a.id; const idB = b.id;
-                const lenA = idA.length; const lenB = idB.length;
-                
+                const idA = a.id;
+                const idB = b.id;
+                // String comparison for large IDs works correctly for length then value
                 if (sort === 'oldest') {
-                    if (lenA !== lenB) return lenA - lenB;
-                    return idA.localeCompare(idB);
+                    return idA.length - idB.length || idA.localeCompare(idB);
                 } else {
-                    if (lenA !== lenB) return lenB - lenA;
-                    return idB.localeCompare(idA);
+                    return idB.length - idA.length || idB.localeCompare(idA);
                 }
             });
 
@@ -356,13 +295,15 @@
         function renderPage() {
             const container = document.getElementById('results-grid');
             container.innerHTML = "";
+
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const pageItems = filteredData.slice(start, end);
 
             if (pageItems.length === 0) {
                 container.innerHTML = `<div class="col-span-full text-center py-12 text-slate-500 border border-dashed border-slate-800 rounded-2xl font-bold">موردی یافت نشد.</div>`;
-                renderPagination(0); return;
+                renderPagination(0);
+                return;
             }
 
             pageItems.forEach(user => {
@@ -401,6 +342,7 @@
         function renderPagination(totalPages) {
             const el = document.getElementById('pagination');
             if (totalPages <= 1) { el.innerHTML = ''; return; }
+
             let html = `
                 <button onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled class="opacity-50 cursor-not-allowed px-4 py-2 bg-slate-800 rounded-lg"' : 'class="px-4 py-2 bg-slate-800 hover:bg-blue-600 text-white rounded-lg transition-colors font-bold"'}>&rarr; قبلی</button>
                 <span class="mx-4 font-bold text-slate-300">صفحه ${currentPage.toLocaleString('fa-IR')} از ${totalPages.toLocaleString('fa-IR')}</span>
@@ -409,19 +351,35 @@
             el.innerHTML = html;
         }
 
-        window.changePage = (newPage) => { currentPage = newPage; renderPage(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-        
-        window.exportCSV = () => {
-            if (filteredData.length === 0) return alert("داده‌ای موجود نیست.");
-            let csv = "\uFEFFUsername,ID,Location,Device,Created,Link\n";
-            filteredData.forEach(u => { csv += `${u.username},${u.id},${u.location},"${u.device}",${u.created},https://x.com/${u.username}\n`; });
-            const link = document.createElement("a"); link.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8;" }));
-            link.download = `xforensics_export_${Date.now()}.csv`; document.body.appendChild(link); link.click(); document.body.removeChild(link);
+        window.changePage = (newPage) => {
+            currentPage = newPage;
+            renderPage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
+        // --- CSV EXPORT ---
+        window.exportCSV = () => {
+            if (filteredData.length === 0) return alert("داده‌ای موجود نیست.");
+            
+            let csv = "\uFEFFUsername,ID,Location,Device,Created,Link\n";
+            filteredData.forEach(u => {
+                csv += `${u.username},${u.id},${u.location},"${u.device}",${u.created},https://x.com/${u.username}\n`;
+            });
+
+            const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = `xforensics_export_${Date.now()}.csv`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Events
         document.getElementById('search-input').addEventListener('input', filterAndRender);
         document.getElementById('sort-select').addEventListener('change', filterAndRender);
 
+        // Start
         init();
 
     </script>
