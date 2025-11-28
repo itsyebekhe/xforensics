@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         X Profile Forensics (v18.1 Mass Block)
+// @name         X Profile Forensics (v18.3 Auto-Detect & Privacy)
 // @namespace    http://tampermonkey.net/
-// @version      18.1.0
-// @description  Forensics tool. Added: Mass Block feature in Dashboard.
+// @version      18.3.0
+// @description  Forensics tool. Added: Auto-detection of pre-blocked users & Privacy mode for Exports (excludes block status).
 // @author       A Pleasant Experience
 // @match        https://x.com/*
 // @match        https://twitter.com/*
@@ -22,7 +22,7 @@
 
     const TRANSLATIONS = {
         en: {
-            title: "Forensics v18.1",
+            title: "Forensics v18.3",
             menu_btn: "Forensics",
             labels: { location: "Location", device: "Device", id: "Perm ID", created: "Created", renamed: "Renamed", identity: "Identity", lang: "Language", type: "Type" },
             risk: { safe: "SAFE", detected: "DETECTED", anomaly: "ANOMALY", caution: "CAUTION", normal: "NORMAL", verified: "VERIFIED ID" },
@@ -52,7 +52,8 @@
                 btn_cloud: "☁️ Update from GitHub",
                 btn_contrib: "📤 Contribute Data",
                 btn_clear: "🗑️ Clear Cache",
-                btn_block: "🚫 Mass Block Listed", // NEW
+                btn_block: "🚫 Mass Block Listed",
+                btn_stop: "🛑 STOP Process",
                 count: "Users Stored: {n}",
                 list_header: "User List (Click to Visit)",
                 list_empty: "No users found matching filters.",
@@ -64,10 +65,12 @@
                 msg_cloud_ok: "Success! Added {n} users from GitHub.",
                 msg_cloud_fail: "Failed to fetch database.",
                 msg_err: "Invalid file.",
-                msg_block_conf: "⚠️ WARNING ⚠️\n\nYou are about to BLOCK {n} users currently visible in the list.\n\nProcess will take some time to avoid rate limits.\nContinue?", // NEW
-                msg_blocking: "Blocking {c}/{t}...", // NEW
-                msg_block_done: "Process Complete. Blocked {n} users.", // NEW
-                contrib_info: "1. A file (contribution.json) has been downloaded.\n2. A GitHub tab will open.\n3. DRAG & DROP the file into the comment box to upload it."
+                msg_block_conf: "⚠️ WARNING ⚠️\n\nYou are about to BLOCK {n} users currently visible in the list (excluding those already blocked).\n\nProcess takes time (1.2s per user).\nContinue?",
+                msg_blocking: "Blocking {c}/{t}...",
+                msg_block_done: "Process Complete. Blocked {n} users.",
+                msg_block_stop: "Process stopped by user.",
+                msg_no_targets: "All users in this filter are already blocked!",
+                contrib_info: "1. A CLEAN file (contribution.json) has been downloaded (Block status removed).\n2. A GitHub tab will open.\n3. DRAG & DROP the file into the comment box to upload it."
             },
             btn: { view_avatar: "View Avatar", close: "Close", retry: "Refresh Data" },
             values: { gov: "Government", unknown: "Unknown", west_asia: "West Asia", fa_script: "Farsi/Arabic" },
@@ -76,7 +79,7 @@
             lang_sel: "Lang:"
         },
         fa: {
-            title: "تحلیلگر پروفایل ۱۸.۱",
+            title: "تحلیلگر پروفایل ۱۸.۳",
             menu_btn: "جرم‌شناسی",
             labels: { location: "موقعیت", device: "دستگاه", id: "شناسه", created: "ساخت", renamed: "تغییر نام", identity: "هویت", lang: "زبان", type: "نوع" },
             risk: { safe: "امن", detected: "هشدار", anomaly: "ناهنجاری", caution: "احتیاط", normal: "طبیعی", verified: "تایید شده" },
@@ -106,7 +109,8 @@
                 btn_cloud: "☁️ آپدیت از گیت‌هاب",
                 btn_contrib: "📤 ارسال دیتا (مشارکت)",
                 btn_clear: "🗑️ حذف دیتا",
-                btn_block: "🚫 مسدودسازی لیست", // NEW
+                btn_block: "🚫 مسدودسازی لیست",
+                btn_stop: "🛑 توقف عملیات",
                 count: "ذخیره شده: {n}",
                 list_header: "لیست کاربران (برای مشاهده کلیک کنید)",
                 list_empty: "کاربری با این مشخصات یافت نشد.",
@@ -118,10 +122,12 @@
                 msg_cloud_ok: "موفق! {n} کاربر از گیت‌هاب اضافه شد.",
                 msg_cloud_fail: "خطا در دریافت دیتابیس.",
                 msg_err: "فایل نامعتبر است.",
-                msg_block_conf: "⚠️ هشدار ⚠️\n\nشما در حال مسدود کردن (Block) تعداد {n} کاربر هستید که در لیست فیلتر شده‌اند.\n\nاین فرآیند برای جلوگیری از محدودیت توییتر زمان‌بر است.\nادامه می‌دهید؟", // NEW
-                msg_blocking: "مسدودسازی {c} از {t}...", // NEW
-                msg_block_done: "پایان! {n} کاربر بلاک شدند.", // NEW
-                contrib_info: "۱. یک فایل (contribution.json) دانلود شد.\n۲. صفحه گیت‌هاب باز می‌شود.\n۳. فایل دانلود شده را داخل کادر متن بکشید و رها کنید (Drag & Drop)."
+                msg_block_conf: "⚠️ هشدار ⚠️\n\nشما در حال مسدود کردن (Block) تعداد {n} کاربر هستید (کاربرانی که قبلا بلاک شده‌اند نادیده گرفته می‌شوند).\n\nاین فرآیند زمان‌بر است.\nادامه می‌دهید؟",
+                msg_blocking: "مسدودسازی {c} از {t}...",
+                msg_block_done: "پایان! {n} کاربر بلاک شدند.",
+                msg_block_stop: "عملیات توسط کاربر متوقف شد.",
+                msg_no_targets: "تمام کاربران این لیست قبلا بلاک شده‌اند!",
+                contrib_info: "۱. یک فایل پاکسازی شده (contribution.json) دانلود شد (وضعیت بلاک حذف شد).\n۲. صفحه گیت‌هاب باز می‌شود.\n۳. فایل دانلود شده را داخل کادر متن بکشید و رها کنید (Drag & Drop)."
             },
             btn: { view_avatar: "آواتار اصلی", close: "بستن", retry: "بروزرسانی" },
             values: { gov: "دولتی", unknown: "نامشخص", west_asia: "غرب آسیا", fa_script: "فارسی/عربی" },
@@ -140,6 +146,10 @@
 
     let saveTimeout;
     let db = {};
+    
+    // Globals for Blocking
+    let isBlockingProcess = false;
+    let abortBlock = false;
 
     function saveDB() {
         if (saveTimeout) clearTimeout(saveTimeout);
@@ -237,6 +247,7 @@
         }
         .xf-user-row { display: flex; justify-content: space-between; align-items: center; padding: 8px; border-bottom: 1px solid var(--xf-border); cursor: pointer; font-size: 12px; }
         .xf-user-row:hover { background: rgba(255,255,255,0.1); }
+        .xf-user-row.xf-blocked { opacity: 0.5; background: rgba(100,0,0,0.1); }
         .xf-u-name { font-weight: bold; color: var(--xf-text); }
         .xf-u-meta { font-size: 11px; color: var(--xf-dim); display: block; margin-top: 2px; }
         .xf-u-risk { font-size: 9px; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #000; }
@@ -306,6 +317,16 @@
         if (!code) return TEXT.values.unknown;
         if (code === "West Asia") return TEXT.values.west_asia;
         return COUNTRY_MAP[code] || code;
+    }
+
+    // New helper: Clean DB for export (removes blocked status)
+    function getCleanDB() {
+        const clean = JSON.parse(JSON.stringify(db)); // Deep copy
+        Object.keys(clean).forEach(k => {
+            if (clean[k].data) delete clean[k].data.isBlocked;
+            if (clean[k].html) delete clean[k].html;
+        });
+        return clean;
     }
 
     // --- DASHBOARD UI ---
@@ -396,14 +417,18 @@
         for (const user of pageItems) {
             const entry = db[user].data;
             const riskTag = entry.riskLabel;
+            const isBlocked = entry.isBlocked === true;
             let badgeColor = "#fff";
+            
             if (riskTag === TEXT.risk.safe || riskTag === TEXT.risk.normal) badgeColor = "var(--xf-green)";
             else if (riskTag === TEXT.risk.detected) badgeColor = "var(--xf-red)";
             else if (riskTag === TEXT.risk.anomaly) badgeColor = "var(--xf-orange)";
 
             const row = document.createElement("div");
-            row.className = "xf-user-row";
-            row.innerHTML = `<div><div class="xf-u-name">@${user}</div><span class="xf-u-meta">📍 ${entry.country} | 📱 ${entry.device.split(' ')[0]}</span></div><div class="xf-u-risk" style="background:${badgeColor}">${riskTag}</div>`;
+            row.className = `xf-user-row ${isBlocked ? 'xf-blocked' : ''}`;
+            const displayRisk = isBlocked ? `🚫 ${riskTag}` : riskTag;
+            
+            row.innerHTML = `<div><div class="xf-u-name">@${user}</div><span class="xf-u-meta">📍 ${entry.country} | 📱 ${entry.device.split(' ')[0]}</span></div><div class="xf-u-risk" style="background:${badgeColor}">${displayRisk}</div>`;
             row.onclick = () => window.open(`https://x.com/${user}`, '_blank');
             listContainer.appendChild(row);
         }
@@ -479,7 +504,7 @@
         document.getElementById("xf-btn-restore").onclick = () => document.getElementById("xf-restore-input").click();
         document.getElementById("xf-btn-csv").onclick = exportCSV;
         document.getElementById("xf-btn-clear").onclick = clearCache;
-        document.getElementById("xf-btn-block").onclick = handleMassBlock; // NEW
+        document.getElementById("xf-btn-block").onclick = handleMassBlock; 
         document.getElementById("xf-dash-close-btn").onclick = () => { overlay.style.display = "none"; };
 
         document.getElementById('xf-dash-l-auto').onclick = () => setLang('auto');
@@ -491,23 +516,45 @@
 
     // --- MASS BLOCK ---
     async function handleMassBlock() {
-        const usersToBlock = getFilteredUsers(); // Logic separated to helper
-        if(usersToBlock.length === 0) return;
+        // If already blocking, stop it
+        if (isBlockingProcess) {
+            abortBlock = true;
+            return;
+        }
+
+        const rawList = getFilteredUsers();
+        // Filter out users who are ALREADY blocked to avoid redundant API calls
+        const usersToBlock = rawList.filter(u => !db[u].data.isBlocked);
+        
+        if(usersToBlock.length === 0) return alert(TEXT.dashboard.msg_no_targets);
 
         if(!confirm(TEXT.dashboard.msg_block_conf.replace("{n}", usersToBlock.length))) return;
 
         const btn = document.getElementById("xf-btn-block");
-        const originalText = btn.innerText;
+        const originalText = TEXT.dashboard.btn_block;
+        
+        isBlockingProcess = true;
+        abortBlock = false;
+        btn.innerText = TEXT.dashboard.btn_stop;
+        btn.style.background = "#fff";
+        btn.style.color = "#000";
+
         let successCount = 0;
 
         for (let i = 0; i < usersToBlock.length; i++) {
+            if (abortBlock) break;
+
             const username = usersToBlock[i];
             const userId = db[username].data.id;
             
-            btn.innerText = TEXT.dashboard.msg_blocking.replace("{c}", i + 1).replace("{t}", usersToBlock.length);
+            btn.innerText = `${TEXT.dashboard.btn_stop} (${i+1}/${usersToBlock.length})`;
             
             try {
                 await performBlock(userId);
+                // Mark as blocked in DB immediately so it persists even if we stop
+                db[username].data.isBlocked = true; 
+                saveDB();
+                renderUserList(db); // Update UI to show blocked status
                 successCount++;
             } catch (e) {
                 console.error("Block failed for", username, e);
@@ -516,8 +563,16 @@
             await new Promise(r => setTimeout(r, 1200));
         }
 
+        isBlockingProcess = false;
+        btn.style.background = "#420000";
+        btn.style.color = "#fff";
         btn.innerText = originalText;
-        alert(TEXT.dashboard.msg_block_done.replace("{n}", successCount));
+
+        if (abortBlock) {
+            alert(TEXT.dashboard.msg_block_stop);
+        } else {
+            alert(TEXT.dashboard.msg_block_done.replace("{n}", successCount));
+        }
     }
 
     async function performBlock(userId) {
@@ -558,7 +613,11 @@
     function contributeData() {
         const count = Object.keys(db).length;
         if (count === 0) return alert("No data to contribute.");
-        const blob = new Blob([JSON.stringify(db, null, 2)], { type: "application/json" });
+        
+        // USE CLEAN DB (Privacy)
+        const cleanDB = getCleanDB();
+        const blob = new Blob([JSON.stringify(cleanDB, null, 2)], { type: "application/json" });
+        
         const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `contribution.json`;
         document.body.appendChild(link); link.click(); document.body.removeChild(link);
         alert(TEXT.dashboard.contrib_info);
@@ -567,7 +626,10 @@
     }
 
     function backupJSON() {
-        const blob = new Blob([JSON.stringify(db, null, 2)], { type: "application/json" });
+        // USE CLEAN DB (Privacy)
+        const cleanDB = getCleanDB();
+        const blob = new Blob([JSON.stringify(cleanDB, null, 2)], { type: "application/json" });
+        
         const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `xf_backup_${Date.now()}.json`;
         document.body.appendChild(link); link.click(); document.body.removeChild(link);
     }
@@ -588,13 +650,14 @@
     }
 
     function exportCSV() {
-        const keys = getFilteredUsers(); // Use filtered list for CSV too
-        let csv = "\uFEFFUsername,ID,Location,Device,Risk,Created,Link\n";
+        const keys = getFilteredUsers(); 
+        let csv = "\uFEFFUsername,ID,Location,Device,Risk,Created,Link,Blocked\n";
         keys.forEach(user => {
             const entry = db[user].data;
             const riskTag = entry.riskLabel;
             const safeDev = `"${entry.deviceFull.replace(/"/g, '""')}"`;
-            csv += `${user},${entry.id},${entry.country},${safeDev},${riskTag},${entry.created},https://x.com/${user}\n`;
+            const blockedStatus = entry.isBlocked ? "Yes" : "No";
+            csv += `${user},${entry.id},${entry.country},${safeDev},${riskTag},${entry.created},https://x.com/${user},${blockedStatus}\n`;
         });
         const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
         const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `xf_report_${Date.now()}.csv`;
@@ -672,10 +735,11 @@
         data.riskLabel = label;
 
         const existingNote = db[username]?.note || "";
+        const blockedBadge = data.isBlocked ? `<span style="background:red;color:white;font-size:10px;padding:2px 4px;border-radius:4px;margin-left:5px;">BLOCKED</span>` : "";
 
         return `
             <div class="xf-header">
-                <div style="display:flex;align-items:center;"><span class="xf-title">${TEXT.title}</span><span class="xf-badge" style="background:${color}">${label}</span></div>
+                <div style="display:flex;align-items:center;"><span class="xf-title">${TEXT.title}</span><span class="xf-badge" style="background:${color}">${label}</span>${blockedBadge}</div>
                 <div class="xf-retry" id="xf-retry-btn" title="${TEXT.btn.retry}" data-user="${username}">↻</div>
             </div>
             <div class="xf-bar-bg"><div class="xf-bar-fill" style="width:${pct};background:${color}"></div></div>
@@ -773,12 +837,19 @@
             const countryDisplay = getCountryDisplay(rawCountry);
             const name = core.name || ""; const bio = core.description || "";
             const isPersianSpeaker = ARABIC_SCRIPT_REGEX.test(name) || ARABIC_SCRIPT_REGEX.test(bio);
+            
+            // Check if user is ALREADY blocked via API (res.legacy.blocking)
+            // Combine with DB memory
+            const apiBlocked = res.legacy?.blocking === true;
+            const existingBlocked = db[user]?.data?.isBlocked || false;
+            const finalBlockedState = apiBlocked || existingBlocked;
 
             const data = {
                 country: countryDisplay, countryCode: rawCountry, device: devShort, deviceFull: devFull, id: res.rest_id,
                 created: formatTime(res.core?.created_at || res.legacy?.created_at), renamed: parseInt(about.username_changes?.count || 0),
                 isAccurate: about.location_accurate, isIdVerified: verif.is_identity_verified === true, langCode: isPersianSpeaker ? 'fa' : null,
-                avatar: (res.avatar?.image_url || "").replace("_normal", "_400x400")
+                avatar: (res.avatar?.image_url || "").replace("_normal", "_400x400"),
+                isBlocked: finalBlockedState
             };
 
             let pillText = `📍 ${data.country}`;
