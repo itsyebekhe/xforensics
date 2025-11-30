@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         X Profile Forensics (v19.2)
+// @name         X Profile Forensics (v19.5)
 // @namespace    http://tampermonkey.net/
-// @version      19.2.0
-// @description  Forensics tool. Added "ID Lookup" tool to find profiles by numeric ID.
+// @version      19.5.0
+// @description  Forensics tool. Fixed Issue where tags/checkboxes would not persist until page refresh.
 // @author       https://x.com/yebekhe
 // @match        https://x.com/*
 // @match        https://twitter.com/*
@@ -22,10 +22,17 @@
 
     const TRANSLATIONS = {
         en: {
-            title: "Forensics v19.2",
+            title: "Forensics v19.5",
             menu_btn: "Forensics",
             labels: { location: "Location", device: "Device", id: "Perm ID", created: "Created", renamed: "Renamed", identity: "Identity", lang: "Language", type: "Type" },
             risk: { safe: "SAFE", detected: "DETECTED", anomaly: "ANOMALY", caution: "CAUTION", normal: "NORMAL", verified: "VERIFIED ID" },
+            tags: {
+                title: "Manual Tags / Classification",
+                loc_change: "Location Changed",
+                base_iran: "Suspect Base Iran",
+                cyber: "Cyber/Organized",
+                fake: "Fake/Bot"
+            },
             status: {
                 high_conf: "High Confidence",
                 high_desc: "Connection matches organic traffic patterns.",
@@ -42,7 +49,7 @@
             dashboard: {
                 title: "Forensics Database",
                 btn_open: "📂 DB",
-                search_placeholder: "Search Username or ID...",
+                search_placeholder: "Search Username, ID or Tag...",
                 filter_loc: "Filter Location",
                 filter_risk: "Filter Risk Level",
                 opt_all: "All Risks",
@@ -119,10 +126,17 @@
             lang_sel: "Lang:"
         },
         fa: {
-            title: "تحلیلگر پروفایل ۱۹.۲",
+            title: "تحلیلگر پروفایل ۱۹.۵",
             menu_btn: "جرم‌شناسی",
             labels: { location: "موقعیت", device: "دستگاه", id: "شناسه", created: "ساخت", renamed: "تغییر نام", identity: "هویت", lang: "زبان", type: "نوع" },
             risk: { safe: "امن", detected: "هشدار", anomaly: "ناهنجاری", caution: "احتیاط", normal: "طبیعی", verified: "تایید شده" },
+            tags: {
+                title: "دسته‌بندی / تگ‌ها",
+                loc_change: "تغییر لوکیشن",
+                base_iran: "مشکوک به Base Iran",
+                cyber: "سایبری/سازمانی",
+                fake: "فیک/جعلی"
+            },
             status: {
                 high_conf: "اطمینان بالا",
                 high_desc: "اتصال طبیعی و ارگانیک است.",
@@ -139,7 +153,7 @@
             dashboard: {
                 title: "پایگاه داده جرم‌شناسی",
                 btn_open: "📂 دیتا",
-                search_placeholder: "جستجوی نام کاربری یا ID...",
+                search_placeholder: "جستجوی کاربر، ID یا تگ...",
                 filter_loc: "فیلتر کشور",
                 filter_risk: "فیلتر ریسک",
                 opt_all: "همه",
@@ -380,6 +394,12 @@
         .xf-batch-options { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin: 10px 0; max-height: 100px; overflow-y: auto; background: rgba(255,255,255,0.05); padding: 5px; border-radius: 8px; }
         .xf-batch-opt { display: flex; align-items: center; font-size: 11px; color: var(--xf-dim); cursor: pointer; }
         .xf-batch-opt input { margin-right: 5px; cursor: pointer; accent-color: var(--xf-blue); }
+
+        .xf-tags-container { margin-top: 10px; border-top: 1px solid var(--xf-border); padding-top: 8px; }
+        .xf-tags-title { font-size: 11px; font-weight: bold; color: var(--xf-dim); margin-bottom: 5px; }
+        .xf-tags-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+        .xf-tag-opt { display: flex; align-items: center; font-size: 11px; color: var(--xf-text); cursor: pointer; user-select: none; }
+        .xf-tag-opt input { margin-right: 5px; accent-color: var(--xf-blue); cursor: pointer; }
     `;
 
     const styleEl = document.createElement("style");
@@ -898,11 +918,17 @@
 
         for (const user of allKeys) {
             const entry = db[user].data;
+            const tags = db[user].tags || [];
             const riskTag = entry.riskLabel;
 
             if (locFilter && !entry.country.toLowerCase().includes(locFilter)) continue;
             if (riskFilter !== "ALL" && riskTag !== riskFilter) continue;
-            if (searchFilter && !user.toLowerCase().includes(searchFilter) && !entry.id.includes(searchFilter)) continue;
+            // Search in username, ID, or tags
+            if (searchFilter) {
+                const tagMatch = tags.some(t => t.toLowerCase().includes(searchFilter));
+                const userMatch = user.toLowerCase().includes(searchFilter) || entry.id.includes(searchFilter);
+                if (!userMatch && !tagMatch) continue;
+            }
 
             filteredKeys.push(user);
         }
@@ -1236,13 +1262,14 @@
 
     function exportCSV() {
         const keys = getFilteredUsers();
-        let csv = "\uFEFFUsername,ID,Location,Device,Risk,Created,Link,Blocked\n";
+        let csv = "\uFEFFUsername,ID,Location,Device,Risk,Created,Link,Blocked,Tags\n";
         keys.forEach(user => {
             const entry = db[user].data;
             const riskTag = entry.riskLabel;
             const safeDev = `"${entry.deviceFull.replace(/"/g, '""')}"`;
             const blockedStatus = entry.isBlocked ? "Yes" : "No";
-            csv += `${user},${entry.id},${entry.country},${safeDev},${riskTag},${entry.created},https://x.com/${user},${blockedStatus}\n`;
+            const tags = (db[user].tags || []).join(' | ');
+            csv += `${user},${entry.id},${entry.country},${safeDev},${riskTag},${entry.created},https://x.com/${user},${blockedStatus},"${tags}"\n`;
         });
         const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
         const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `xf_report_${Date.now()}.csv`;
@@ -1296,7 +1323,24 @@
         saveDB();
     }
 
-    function renderCardHTML(data, username) {
+    function toggleTag(user, tag) {
+        if (!db[user]) return;
+        if (!db[user].tags) db[user].tags = [];
+
+        const idx = db[user].tags.indexOf(tag);
+        if (idx === -1) {
+            db[user].tags.push(tag);
+        } else {
+            db[user].tags.splice(idx, 1);
+        }
+
+        // IMMEDIATE UPDATE OF HTML TO PERSIST STATE
+        db[user].html = renderCardHTML(db[user].data, user, db[user].tags, db[user].note);
+
+        saveDB();
+    }
+
+    function renderCardHTML(data, username, tags = null, note = null) {
         let color = "var(--xf-green)", label = TEXT.risk.safe, pct = "5%", title = TEXT.status.high_conf, desc = TEXT.status.high_desc, bg = "rgba(0, 186, 124, 0.1)";
         const isTargetLoc = (data.countryCode === "Iran" || data.countryCode === "West Asia" || data.countryCode === "غرب آسیا");
         const isTargetDev = (data.deviceFull || "").match(/Iran|West Asia|غرب آسیا/i);
@@ -1319,8 +1363,32 @@
 
         data.riskLabel = label;
 
-        const existingNote = db[username]?.note || "";
+        // Use passed args or fallback to global DB
+        const existingNote = note !== null ? note : (db[username]?.note || "");
+        const userTags = tags !== null ? tags : (db[username]?.tags || []);
         const blockedBadge = data.isBlocked ? `<span style="background:red;color:white;font-size:10px;padding:2px 4px;border-radius:4px;margin-left:5px;">BLOCKED</span>` : "";
+
+        // Available tags
+        const availableTags = [
+            { id: 'loc_change', label: TEXT.tags.loc_change },
+            { id: 'base_iran', label: TEXT.tags.base_iran },
+            { id: 'cyber', label: TEXT.tags.cyber },
+            { id: 'fake', label: TEXT.tags.fake }
+        ];
+
+        let tagsHtml = `
+            <div class="xf-tags-container">
+                <div class="xf-tags-title">${TEXT.tags.title}</div>
+                <div class="xf-tags-grid">
+                    ${availableTags.map(t => `
+                        <label class="xf-tag-opt">
+                            <input type="checkbox" class="xf-tag-check" data-user="${username}" data-tag="${t.id}" ${userTags.includes(t.id) ? 'checked' : ''}>
+                            ${t.label}
+                        </label>
+                    `).join('')}
+                </div>
+            </div>
+        `;
 
         return `
             <div class="xf-header">
@@ -1340,6 +1408,8 @@
             </div>
 
             <textarea class="xf-textarea" id="xf-note-input" data-user="${username}" placeholder="${TEXT.notes_placeholder}">${existingNote}</textarea>
+
+            ${tagsHtml}
 
             <div class="xf-osint-row">
                 <a href="https://web.archive.org/web/*/twitter.com/${username}" target="_blank" title="${TEXT.osint_titles.archive}" class="xf-osint-icon">🏛️</a>
@@ -1372,6 +1442,13 @@
                 saveNote(e.target.dataset.user, e.target.value);
             });
         }
+
+        const tagChecks = container.querySelectorAll('.xf-tag-check');
+        tagChecks.forEach(chk => {
+            chk.onchange = (e) => {
+                toggleTag(e.target.dataset.user, e.target.dataset.tag);
+            };
+        });
     }
 
     function showDesktop(e, html, username) {
@@ -1395,7 +1472,10 @@
         let result = null;
         if (!forceRefresh && db[user]) {
             result = db[user];
-            result.html = renderCardHTML(result.data, user);
+            // FORCE REGENERATE HTML to include latest tags/notes
+            const currentTags = result.tags || [];
+            const currentNote = result.note || "";
+            result.html = renderCardHTML(result.data, user, currentTags, currentNote);
             return result;
         }
 
@@ -1427,6 +1507,10 @@
             const existingBlocked = db[user]?.data?.isBlocked || false;
             const finalBlockedState = apiBlocked || existingBlocked;
 
+            // Preserve existing tags/notes if just refreshing
+            const existingTags = db[user]?.tags || [];
+            const existingNote = db[user]?.note || "";
+
             const data = {
                 country: countryDisplay, countryCode: rawCountry, device: devShort, deviceFull: devFull, id: res.rest_id,
                 created: formatTime(res.core?.created_at || res.legacy?.created_at), renamed: parseInt(about.username_changes?.count || 0),
@@ -1445,7 +1529,8 @@
             if (!data.isAccurate) color = isTargetDev ? "var(--xf-green)" : "var(--xf-red)";
             else if (isTargetLoc) color = "var(--xf-orange)";
 
-            result = { data, pillText, color, html: renderCardHTML(data, user) };
+            result = { data, pillText, color, note: existingNote, tags: existingTags };
+            result.html = renderCardHTML(data, user, existingTags, existingNote);
             db[user] = result; saveDB(); return result;
         } catch(e) { console.error(e); return null; }
     }
