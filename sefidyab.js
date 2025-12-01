@@ -1161,7 +1161,7 @@
         const cleanDB = getCleanDB();
         const blob = new Blob([JSON.stringify(cleanDB, null, 2)], { type: "application/json" });
 
-        const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `xf_backup_${Date.now()}.json`;
+        const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `sefidyab_backup_${Date.now()}.json`;
         document.body.appendChild(link); link.click(); document.body.removeChild(link);
     }
 
@@ -1280,7 +1280,7 @@
             csv += `${user},${entry.id},${entry.country},${safeDev},${riskTag},${entry.created},https://x.com/${user},${blockedStatus},"${tags}"\n`;
         });
         const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
-        const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `xf_report_${Date.now()}.csv`;
+        const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = `sefidyab_report_${Date.now()}.csv`;
         document.body.appendChild(link); link.click(); document.body.removeChild(link);
     }
 
