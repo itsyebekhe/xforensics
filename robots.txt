@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tawanamohammadi.github.io/xforensics/sitemap.xml

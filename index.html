@@ -3,8 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X Forensics | رصدخانه ناهنجاری‌ها</title>
-    <meta name="description" content="لیست حساب‌های کاربری توییتر با الگوی اتصال غیرعادی از ایران.">
+    <title>سفید یاب | Sefid Yab - ابزار شناسایی سیمکارت سفید در X</title>
+    <meta name="description" content="سفید یاب - ابزار پیشرفته OSINT برای شناسایی حساب‌های کاربری با سیم‌کارت سفید در شبکه اجتماعی X (توییتر). شفافیت در فضای مجازی توسط توانا محمدی.">
+    <meta name="keywords" content="سفید یاب, سیم کارت سفید, OSINT, توییتر, X, VPN, ایران, توانا محمدی, Sefid Yab, White SIM, Twitter Analysis, Social Media Intelligence">
+    <meta name="author" content="Tawana Mohammadi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tawanamohammadi.github.io/xforensics/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tawanamohammadi.github.io/xforensics/">
+    <meta property="og:title" content="سفید یاب | Sefid Yab - ابزار شناسایی سیمکارت سفید در X">
+    <meta property="og:description" content="ابزار پیشرفته OSINT برای شناسایی حساب‌های کاربری با سیم‌کارت سفید در X. شفافیت در فضای مجازی.">
+    <meta property="og:image" content="https://tawanamohammadi.github.io/xforensics/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tawanamohammadi.github.io/xforensics/">
+    <meta name="twitter:title" content="سفید یاب | Sefid Yab - ابزار شناسایی سیمکارت سفید در X">
+    <meta name="twitter:description" content="ابزار پیشرفته OSINT برای شناسایی حساب‌های کاربری با سیم‌کارت سفید در X. شفافیت در فضای مجازی.">
+    <meta name="twitter:image" content="https://tawanamohammadi.github.io/xforensics/twitter-card.png">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "سفید یاب - Sefid Yab",
+      "alternateName": "White SIM Detector",
+      "description": "ابزار پیشرفته OSINT برای شناسایی حساب‌های کاربری با سیم‌کارت سفید در شبکه اجتماعی X (توییتر سابق)",
+      "url": "https://tawanamohammadi.github.io/xforensics/",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Web, Windows, macOS, Linux, Android, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Tawana Mohammadi",
+        "url": "https://tawana.online",
+        "email": "info@tawana.online",
+        "sameAs": [
+          "https://github.com/tawanamohammadi",
+          "https://github.com/TAwR00T",
+          "https://orcid.org/0009-0005-6825-6728",
+          "https://scholar.google.com/citations?user=VP8O0a4AAAAJ",
+          "https://tawanamohammadi.medium.com/",
+          "https://tawanamohammadi.substack.com/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tawana Proxy Team",
+        "url": "https://tawana.online"
+      },
+      "datePublished": "2025-12-01",
+      "dateModified": "2025-12-01",
+      "inLanguage": ["fa", "en"],
+      "keywords": "OSINT, سیم‌کارت سفید, White SIM, Twitter Analysis, X Intelligence, Iran, VPN Detection"
+    }
+    </script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -63,11 +123,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center font-bold text-white font-sans">X</div>
-                    <span class="font-bold text-lg tracking-tight">Forensics Cloud</span>
+                    <div class="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg flex items-center justify-center font-bold text-white font-sans">س</div>
+                    <span class="font-bold text-lg tracking-tight">سفید یاب</span>
                 </div>
                 <div>
-                    <a href="https://github.com/itsyebekhe/xforensics" target="_blank" class="text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2 font-medium">
+                    <a href="https://github.com/tawanamohammadi/xforensics" target="_blank" class="text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2 font-medium">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         GitHub
                     </a>
@@ -82,10 +142,13 @@
         <!-- Header -->
         <div class="text-center mb-12">
             <h1 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">
-                رصدخانه <span class="text-red-600">ناهنجاری‌های</span> توییتر
+                <span class="text-orange-500">سفید یاب</span> | Sefid Yab
             </h1>
             <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-                پایگاه داده زنده از حساب‌های کاربری که با موقعیت «ایران» یا «غرب آسیا» اما بدون استفاده از فیلترشکن (Direct Access) به توییتر متصل هستند.
+                پایگاه داده زنده از حساب‌های کاربری با احتمال استفاده از سیم‌کارت سفید - شفافیت در فضای مجازی
+            </p>
+            <p class="text-slate-500 text-sm max-w-2xl mx-auto mt-2">
+                توسعه یافته توسط <a href="https://tawana.online" target="_blank" class="text-orange-400 hover:text-orange-300">توانا محمدی</a>
             </p>
         </div>
 
@@ -153,15 +216,49 @@
         </div>
 
         <!-- Footer -->
-        <div class="mt-20 text-center text-xs text-slate-500 max-w-3xl mx-auto border-t border-slate-800 pt-8 leading-6 font-medium">
-            <p class="mb-2 font-bold text-slate-300">⚠️ سلب مسئولیت حقوقی و فنی</p>
-            <p>این اطلاعات صرفاً بر اساس داده‌های عمومی (Public API) شبکه اجتماعی ایکس استخراج شده است. وجود نام یک حساب در این لیست لزوماً به معنای وابستگی سازمانی نیست، اما نشان‌دهنده یک الگوی اتصال غیرعادی (اتصال مستقیم از ایران) است که می‌تواند ناشی از سیم‌کارت‌های خاص یا تانلینگ باشد.</p>
+        <div class="mt-20 text-center max-w-3xl mx-auto border-t border-slate-800 pt-8">
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-orange-400 mb-2">سفید یاب | Sefid Yab</h3>
+                <p class="text-slate-400 text-sm mb-4">شفافیت در فضای مجازی | Transparency in Cyberspace</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8 text-right">
+                <div class="bg-slate-900 p-4 rounded-lg">
+                    <h4 class="font-bold text-slate-300 mb-3 flex items-center justify-end gap-2">
+                        <span>👤 توسعه‌دهنده</span>
+                    </h4>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p><span class="text-orange-400 font-bold">توانا محمدی</span> (Tawana Mohammadi)</p>
+                        <p>🌐 <a href="https://tawana.online" target="_blank" class="hover:text-orange-400">tawana.online</a></p>
+                        <p>📧 info@tawana.online</p>
+                        <p>📱 +98 990 112 0235</p>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900 p-4 rounded-lg">
+                    <h4 class="font-bold text-slate-300 mb-3 flex items-center justify-end gap-2">
+                        <span>🔗 پروفایل‌ها</span>
+                    </h4>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p>🐙 GitHub: <a href="https://github.com/tawanamohammadi" target="_blank" class="hover:text-orange-400">@tawanamohammadi</a> | <a href="https://github.com/TAwR00T" target="_blank" class="hover:text-orange-400">@TAwR00T</a></p>
+                        <p>🎓 ORCID: <a href="https://orcid.org/0009-0005-6825-6728" target="_blank" class="hover:text-orange-400">0009-0005-6825-6728</a></p>
+                        <p>📚 Scholar: <a href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ" target="_blank" class="hover:text-orange-400">VP8O0a4AAAAJ</a></p>
+                        <p>✍️ <a href="https://tawanamohammadi.medium.com/" target="_blank" class="hover:text-orange-400">Medium</a> | <a href="https://tawanamohammadi.substack.com/" target="_blank" class="hover:text-orange-400">Substack</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-xs text-slate-500 leading-6 font-medium border-t border-slate-800 pt-6">
+                <p class="mb-2 font-bold text-slate-300">⚠️ سلب مسئولیت حقوقی و فنی</p>
+                <p class="mb-4">این اطلاعات صرفاً بر اساس داده‌های عمومی (Public API) شبکه اجتماعی ایکس استخراج شده است. وجود نام یک حساب در این لیست لزوماً به معنای وابستگی سازمانی نیست، اما نشان‌دهنده یک الگوی اتصال غیرعادی است.</p>
+                <p class="text-slate-600">© 2025 Tawana Mohammadi. All rights reserved.</p>
+            </div>
         </div>
     </main>
 
     <script>
         // CONFIGURATION
-        const DB_URL = "https://raw.githubusercontent.com/itsyebekhe/xforensics/main/database.json";
+        const DB_URL = "https://raw.githubusercontent.com/tawanamohammadi/xforensics/main/database.json";
         
         let allData = [];
         let filteredData = [];
