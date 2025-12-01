@@ -939,10 +939,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "949880031613980672",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۱۰/۱۷, ۹:۱۷:۰۲",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -950,7 +950,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1852785966660161536/xEzKlx-u_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "vahid_p_70": {
@@ -1208,9 +1208,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "96394122",
-      "created": "Invalid Date",
+      "created": "۱۳۸۸/۹/۲۱, ۲۲:۰۷:۱۹",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1218,26 +1218,26 @@
       "avatar": "https://pbs.twimg.com/profile_images/2931805620/d69fdacce9b266d0df6249a074303b07_400x400.jpeg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "MohajerMr": {
     "data": {
-      "country": "نامشخص",
-      "countryCode": "نامشخص",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "2682892626",
-      "created": "Invalid Date",
+      "created": "۱۳۹۳/۵/۴, ۲۲:۳۱:۴۱",
       "renamed": 0,
-      "isAccurate": false,
+      "isAccurate": true,
       "isIdVerified": false,
       "langCode": "fa",
       "avatar": "https://pbs.twimg.com/profile_images/1647868667911127042/brlQSaYR_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "ناهنجاری"
     },
-    "pillText": "📱 Web/Other",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
+    "color": "var(--xf-orange)"
   },
   "fardads": {
     "data": {
@@ -1370,9 +1370,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "276646860",
-      "created": "Invalid Date",
+      "created": "۱۳۹۰/۱/۱۵, ۰:۲۸:۰۶",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1380,7 +1380,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/816871596874862592/rii5_QIh_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "yasharsoltani": {
@@ -1423,10 +1423,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1729709569",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۶/۱۳, ۲۳:۵۵:۵۸",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1434,7 +1434,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1985663452841385984/gziEfkkN_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "MohajeraniSayed": {
@@ -1478,9 +1478,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (Australia)",
       "id": "1185775108041969665",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۷/۲۸, ۸:۰۰:۰۷",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1488,7 +1488,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1908888642296139776/FrWEOuDw_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (Australia)",
     "color": "var(--xf-orange)"
   },
   "mtavakoli67": {
@@ -1513,10 +1513,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1288497585745952768",
-      "created": "Invalid Date",
+      "created": "۱۳۹۹/۵/۸, ۲۰:۰۲:۳۵",
       "renamed": 6,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1524,7 +1524,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1933806513925054464/oeeb22-H_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Alihekmat110": {
@@ -1549,10 +1549,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "601235085",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۳/۱۷, ۲۲:۱۵:۰۰",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1560,7 +1560,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1467881766304288772/nyNjqdaj_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "target4drone": {
@@ -1710,9 +1710,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "898490021363232768",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۵/۲۷, ۱۴:۵۱:۲۹",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1720,7 +1720,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1404445627585531912/97ni38J7_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "smaeel_azari": {
@@ -1763,10 +1763,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "1396946873651453955",
-      "created": "Invalid Date",
+      "created": "۱۴۰۰/۳/۴, ۲:۲۱:۱۲",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1774,7 +1774,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1874307518144425984/0CS6iGjA_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "JZarif": {
@@ -1890,9 +1890,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1811087917168893952",
-      "created": "Invalid Date",
+      "created": "۱۴۰۳/۴/۲۰, ۲۰:۵۰:۴۰",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1900,17 +1900,17 @@
       "avatar": "https://pbs.twimg.com/profile_images/1878866138861350912/IGJ6uJ0w_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "S_A_Salehi": {
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "789497569890013184",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۷/۳۰, ۱۹:۳۴:۲۳",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1918,17 +1918,17 @@
       "avatar": "https://pbs.twimg.com/profile_images/789499882788704257/oIEHjP0d_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Mehdi_Sanaei_": {
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "2249049384",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۹/۲۵, ۲۰:۴۹:۲۱",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -1936,7 +1936,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1518086343338901504/tomho8af_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "AK_Hosseinzadeh": {
@@ -2084,12 +2084,12 @@
   },
   "mohamadmobin1": {
     "data": {
-      "country": "Iran",
-      "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "1943498870",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۷/۱۵, ۱۲:۲۱:۲۴",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2097,7 +2097,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1987412566331490304/yOqralol_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 غرب آسیا | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "Bagheri_Kani": {
@@ -2190,10 +2190,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "779613876228730881",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۷/۳, ۱۳:۰۰:۰۷",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2201,7 +2201,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1963286256659419136/z_59DoF-_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "m_fazaeli": {
@@ -2262,10 +2262,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1369708264879890442",
-      "created": "Invalid Date",
+      "created": "۱۳۹۹/۱۲/۲۰, ۲۱:۲۵:۰۵",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2273,7 +2273,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1369710775556734977/EZWxCyAl_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "RoozbehAlamdar1": {
@@ -2281,9 +2281,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "767813684",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۵/۲۹, ۲۰:۴۲:۰۸",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2291,7 +2291,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1883904165878939648/HtNeuD7y_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "zoheirgharazi": {
@@ -2350,10 +2350,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1196602442",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۱۲/۱, ۱۳:۴۴:۱۳",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2361,7 +2361,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1959717728538816512/FYrWiVUQ_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "DavariAbdolreza": {
@@ -2512,10 +2512,10 @@
     "data": {
       "country": "United States",
       "countryCode": "United States",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "751721055031586816",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۴/۱۹, ۱۴:۴۴:۰۰",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2523,7 +2523,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1392842349567520768/8lq9DN04_400x400.jpg",
       "riskLabel": "احتیاط"
     },
-    "pillText": "📍 United States",
+    "pillText": "📍 United States | 📱 Android (Iran)",
     "color": "var(--xf-green)"
   },
   "ehsan_soltani": {
@@ -2603,9 +2603,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "868034879778377733",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۳/۵, ۱۳:۵۳:۳۷",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2613,7 +2613,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1453033627781062662/Kqgegxw1_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "Zeidabadi_Ahmad": {
@@ -2674,10 +2674,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1420333105727090689",
-      "created": "Invalid Date",
+      "created": "۱۴۰۰/۵/۶, ۱۵:۱۰:۲۵",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2685,7 +2685,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1420337315466121216/F8o1PNCp_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "h0d3r_fa": {
@@ -2729,9 +2729,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (Australia)",
       "id": "1097842159",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۱۰/۲۸, ۱۴:۲۴:۱۹",
       "renamed": 4,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2739,7 +2739,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1950613336728522752/Kyp2DT6N_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (Australia)",
     "color": "var(--xf-orange)"
   },
   "abdollahram": {
@@ -2837,9 +2837,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (Canada)",
       "id": "1331255581978583054",
-      "created": "Invalid Date",
+      "created": "۱۳۹۹/۹/۴, ۱۸:۴۷:۴۵",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2847,7 +2847,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1350064417011073029/KYAOLznq_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (Canada)",
     "color": "var(--xf-orange)"
   },
   "ghazanfarime": {
@@ -2890,10 +2890,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "1746583408120098816",
-      "created": "Invalid Date",
+      "created": "۱۴۰۲/۱۰/۲۴, ۲۰:۵۲:۴۵",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -2901,7 +2901,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1818542156123926528/x_uF0Xzy_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "maliki1341": {
@@ -3154,21 +3154,21 @@
   },
   "MehdiKharratya": {
     "data": {
-      "country": "Netherlands",
-      "countryCode": "Netherlands",
+      "country": "Iran",
+      "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "86962865",
-      "created": "Invalid Date",
+      "created": "۱۳۸۸/۸/۱۱, ۱۸:۵۴:۵۳",
       "renamed": 0,
-      "isAccurate": false,
+      "isAccurate": true,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1699168339187175424/binQ1N12_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Netherlands",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
+    "color": "var(--xf-orange)"
   },
   "bbckalbasi": {
     "data": {
@@ -3333,20 +3333,20 @@
   "iaaraash": {
     "data": {
       "country": "غرب آسیا",
-      "countryCode": "غرب آسیا",
+      "countryCode": "West Asia",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (West Asia)",
       "id": "996135619398193154",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۲/۲۵, ۱:۴۰:۱۳",
       "renamed": 3,
-      "isAccurate": true,
+      "isAccurate": false,
       "isIdVerified": false,
       "langCode": "fa",
       "avatar": "https://pbs.twimg.com/profile_images/1469062642690101255/g1lnywkT_400x400.jpg",
-      "riskLabel": "ناهنجاری"
+      "riskLabel": "طبیعی"
     },
-    "pillText": "📍 غرب آسیا",
-    "color": "var(--xf-orange)"
+    "pillText": "📍 غرب آسیا | 📱 iPhone (West Asia)",
+    "color": "var(--xf-green)"
   },
   "alef20000": {
     "data": {
@@ -3581,11 +3581,11 @@
   "jalilmoheby": {
     "data": {
       "country": "غرب آسیا",
-      "countryCode": "غرب آسیا",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "countryCode": "West Asia",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
       "id": "860947489515614208",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۲/۱۷, ۰:۳۰:۵۱",
       "renamed": 6,
       "isAccurate": true,
       "isIdVerified": false,
@@ -3593,7 +3593,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1764016508705931264/oQcNHDgT_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 غرب آسیا",
+    "pillText": "📍 غرب آسیا | 📱 Android (West Asia)",
     "color": "var(--xf-orange)"
   },
   "HamzeGhalebi": {
@@ -3635,11 +3635,11 @@
   "vahabzadeh_ali": {
     "data": {
       "country": "غرب آسیا",
-      "countryCode": "غرب آسیا",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "countryCode": "West Asia",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "748488389050114048",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۴/۱۰, ۱۶:۳۸:۳۳",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -3647,7 +3647,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1340767923233763328/UWl53iSY_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 غرب آسیا",
+    "pillText": "📍 غرب آسیا | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "razmandeh1367": {
@@ -4210,10 +4210,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1590869623",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۴/۲۲, ۱۶:۲۴:۳۸",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -4221,7 +4221,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/755637070874509312/njWCYRAJ_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "MahdieShadmani": {
@@ -5029,10 +5029,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "872547103188320256",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۳/۱۸, ۰:۴۳:۳۵",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -5040,7 +5040,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1771198354237648896/1Y8WHUmj_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "L0mpan": {
@@ -6135,7 +6135,10 @@
       "riskLabel": "هشدار"
     },
     "pillText": "📍 Germany | 📱 iPhone (Tunisia)",
-    "color": "var(--xf-red)"
+    "color": "var(--xf-red)",
+    "tags": [
+      "loc_change"
+    ]
   },
   "negarsayeh": {
     "data": {
@@ -6159,10 +6162,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1934045959",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۷/۱۲, ۱۵:۱۳:۲۲",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -6170,7 +6173,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1814416828451389440/FAX6ArB7_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "G_H_Mohammadi": {
@@ -6213,10 +6216,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1003760823779684356",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۳/۱۵, ۲:۴۰:۰۴",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -6224,7 +6227,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1962967101712297984/y5ktwKi5_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "majidtafreshi": {
@@ -7143,10 +7146,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "3301261825",
-      "created": "Invalid Date",
+      "created": "۱۳۹۴/۵/۸, ۱۰:۳۶:۰۸",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -7154,7 +7157,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1985463681946107904/vmts8GBF_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "arosakbafiii": {
@@ -7195,21 +7198,21 @@
   },
   "Peyman_Aref": {
     "data": {
-      "country": "Germany",
-      "countryCode": "Germany",
+      "country": "Iran",
+      "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United Kingdom)",
       "id": "754387217959817216",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۴/۲۶, ۲۳:۱۸:۲۳",
       "renamed": 2,
-      "isAccurate": false,
+      "isAccurate": true,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1918548912887021568/OmIRHdn4_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Germany",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Iran | 📱 iPhone (United Kingdom)",
+    "color": "var(--xf-orange)"
   },
   "aqolizadeh": {
     "data": {
@@ -7231,21 +7234,21 @@
   },
   "k_maziar": {
     "data": {
-      "country": "غرب آسیا",
-      "countryCode": "غرب آسیا",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "2234825958",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۹/۱۶, ۲۱:۰۰:۵۴",
       "renamed": 0,
-      "isAccurate": true,
+      "isAccurate": false,
       "isIdVerified": false,
       "langCode": "fa",
       "avatar": "https://pbs.twimg.com/profile_images/1750276929175859200/Bd3lRXny_400x400.jpg",
-      "riskLabel": "ناهنجاری"
+      "riskLabel": "طبیعی"
     },
-    "pillText": "📍 غرب آسیا",
-    "color": "var(--xf-orange)"
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
   },
   "MehdiJami": {
     "data": {
@@ -7303,21 +7306,21 @@
   },
   "heshmatid": {
     "data": {
-      "country": "United Kingdom",
-      "countryCode": "United Kingdom",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "952482822",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۸/۲۷, ۱:۳۵:۳۱",
       "renamed": 0,
-      "isAccurate": false,
+      "isAccurate": true,
       "isIdVerified": false,
       "langCode": "fa",
       "avatar": "https://pbs.twimg.com/profile_images/907135412187123712/MgTueAHU_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 United Kingdom",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)"
   },
   "hmousavian": {
     "data": {
@@ -7521,10 +7524,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "14880556",
-      "created": "Invalid Date",
+      "created": "۱۳۸۷/۳/۳, ۱۶:۳۰:۵۵",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -7532,7 +7535,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1650353045887148035/iHOOzdJM_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "Leylapaydar": {
@@ -8074,9 +8077,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "37050268",
-      "created": "Invalid Date",
+      "created": "۱۳۸۸/۲/۱۲, ۲:۱۰:۴۹",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -8084,7 +8087,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/906801285889970177/qnc7ydWX_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "samimi_sadaf": {
@@ -8215,10 +8218,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1415344922060800007",
-      "created": "Invalid Date",
+      "created": "۱۴۰۰/۴/۲۳, ۲۰:۴۸:۴۴",
       "renamed": 22,
       "isAccurate": true,
       "isIdVerified": false,
@@ -8226,7 +8229,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1719817976860319745/IKLS2hvH_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "factyar": {
@@ -8463,10 +8466,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1332731129191919619",
-      "created": "Invalid Date",
+      "created": "۱۳۹۹/۹/۸, ۲۰:۳۱:۱۴",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -8474,7 +8477,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1919107435647717376/iGh_nPJM_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "AboozarSayed": {
@@ -13529,10 +13532,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1664992304648650755",
-      "created": "Invalid Date",
+      "created": "۱۴۰۲/۳/۱۳, ۱۷:۱۸:۰۰",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -13540,7 +13543,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1903135495573442560/tcnE20kt_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "javad_farahani": {
@@ -16241,10 +16244,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "727021572842786816",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۲/۱۳, ۱۰:۵۷:۰۵",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -16252,7 +16255,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1976194730951053312/Qx4Zj-Df_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "paleivysky": {
@@ -16673,10 +16676,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "994511047",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۹/۱۷, ۱۰:۲۲:۳۳",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -16684,7 +16687,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1847567854670905344/zbPMmISr_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "Dr_ayoobi": {
@@ -17429,10 +17432,10 @@
     "data": {
       "country": "Finland",
       "countryCode": "Finland",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "859410700648804355",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۲/۱۲, ۱۸:۴۴:۱۲",
       "renamed": 0,
       "isAccurate": false,
       "isIdVerified": false,
@@ -17440,7 +17443,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1918516225778343936/GUhHN25m_400x400.jpg",
       "riskLabel": "هشدار"
     },
-    "pillText": "📍 Finland",
+    "pillText": "📍 Finland | 📱 Web",
     "color": "var(--xf-red)"
   },
   "arifrahmanii": {
@@ -23097,10 +23100,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1216399328857788417",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۱۰/۲۲, ۲۰:۱۰:۱۲",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -23108,7 +23111,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1973395523932450816/Mam9lZAA_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "mhpoyanfar": {
@@ -23151,11 +23154,11 @@
   "ali_bitarafan5": {
     "data": {
       "country": "غرب آسیا",
-      "countryCode": "غرب آسیا",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "countryCode": "West Asia",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "880000949460324352",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۴/۷, ۱۰:۵۲:۳۰",
       "renamed": 9,
       "isAccurate": true,
       "isIdVerified": false,
@@ -23163,7 +23166,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1433844594639314965/US_j22zk_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 غرب آسیا",
+    "pillText": "📍 غرب آسیا | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "haj_haydar": {
@@ -23866,19 +23869,19 @@
     "data": {
       "country": "United States",
       "countryCode": "United States",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "949296854604316674",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۱۰/۱۵, ۱۸:۳۹:۴۱",
       "renamed": 3,
       "isAccurate": false,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1524336221849370624/LzEniiZw_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "طبیعی"
     },
-    "pillText": "📍 United States",
-    "color": "var(--xf-red)"
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
   },
   "LajevardiZ": {
     "data": {
@@ -24760,10 +24763,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "2617437037",
-      "created": "Invalid Date",
+      "created": "۱۳۹۳/۴/۲۰, ۱۸:۲۷:۳۶",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -24771,7 +24774,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1877986688393515008/80I9Ss1__400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "_javadghaemi": {
@@ -26561,9 +26564,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (Turkey)",
       "id": "1151719748385869824",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۴/۲۷, ۹:۳۶:۰۰",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -26571,7 +26574,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1151720400440705024/1XttatZ5_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (Turkey)",
     "color": "var(--xf-orange)"
   },
   "alirzadabir": {
@@ -36132,9 +36135,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "555840308",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۱/۲۹, ۱۱:۰۰:۲۱",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -36142,7 +36145,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1980673160836947968/S-K-v_AK_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "MinionLn": {
@@ -36885,10 +36888,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "51659555",
-      "created": "Invalid Date",
+      "created": "۱۳۸۸/۴/۷, ۶:۲۷:۰۱",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -36896,7 +36899,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1702408539539402754/nLePxBVu_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "EhsanRamezanian": {
@@ -37494,9 +37497,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1145806178",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۱۱/۱۵, ۱۷:۵۸:۰۳",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -37504,7 +37507,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1942123146141749248/iWbJ5snl_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "GholizadeMahtab": {
@@ -43587,10 +43590,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "2234816707",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۹/۱۶, ۱۷:۱۷:۲۸",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -43598,7 +43601,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/597336128304222209/PQ9w5tp5_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "NimaMoh46483414": {
@@ -43677,10 +43680,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "2233134438",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۹/۱۵, ۱۵:۱۵:۴۵",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -43688,7 +43691,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1571104433458630657/IOMYNTtq_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "alibozorgian": {
@@ -43714,9 +43717,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "945479406",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۸/۲۳, ۹:۴۲:۲۱",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -43724,7 +43727,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1982504309867593728/2JYvR9zz_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "abmomeni": {
@@ -43857,10 +43860,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "2233426872",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۹/۱۵, ۱۹:۲۱:۴۴",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -43868,7 +43871,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1211596849527824384/XHZh4Tej_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "SaeedYousef3885": {
@@ -44159,21 +44162,21 @@
   },
   "lotfi_maryam86": {
     "data": {
-      "country": "نامشخص",
-      "countryCode": "نامشخص",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1033237760268754944",
-      "created": "Invalid Date",
-      "renamed": 0,
-      "isAccurate": false,
+      "created": "۱۳۹۷/۶/۳, ۷:۲۰:۵۳",
+      "renamed": 2,
+      "isAccurate": true,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1755636003648184320/P_FoBoJX_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "ناهنجاری"
     },
-    "pillText": "📱 Web/Other",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)"
   },
   "Atefeh_Mahmoudi": {
     "data": {
@@ -44197,10 +44200,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1029372370069467138",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۵/۲۳, ۱۵:۲۱:۱۲",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -44208,26 +44211,26 @@
       "avatar": "https://pbs.twimg.com/profile_images/1030124935367323649/t8RJbAkE_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Arminm": {
     "data": {
       "country": "Europe",
       "countryCode": "Europe",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
       "id": "17082225",
-      "created": "Invalid Date",
+      "created": "۱۳۸۷/۸/۱۰, ۸:۱۸:۱۲",
       "renamed": 0,
       "isAccurate": false,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1358240018876272641/cju12w9q_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "طبیعی"
     },
-    "pillText": "📍 Europe",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Europe | 📱 Android (West Asia)",
+    "color": "var(--xf-green)"
   },
   "hamedbd": {
     "data": {
@@ -44286,19 +44289,17 @@
   "sogoldanaei": {
     "data": {
       "country": "نامشخص",
-      "countryCode": "نامشخص",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "نامشخص",
+      "deviceFull": "نامشخص",
       "id": "951027415077277696",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۱۰/۲۰, ۹:۴۶:۱۹",
       "renamed": 0,
-      "isAccurate": false,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1849517536628367360/nxdn4khR_400x400.jpg",
       "riskLabel": "هشدار"
     },
-    "pillText": "📱 Web/Other",
+    "pillText": "📱 نامشخص",
     "color": "var(--xf-red)"
   },
   "AfsoonAli": {
@@ -44340,9 +44341,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "2247656694",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۹/۲۴, ۱۹:۲۸:۳۴",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -44350,7 +44351,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1693891504404561920/O1A4v7Pa_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "niloofarmohebbi": {
@@ -44465,10 +44466,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "2843783986",
-      "created": "Invalid Date",
+      "created": "۱۳۹۳/۸/۳, ۱۵:۴۱:۰۰",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -44476,7 +44477,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1386327200111157249/ZDNASbjf_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Mahmood25893075": {
@@ -51070,10 +51071,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "دستگاه",
+      "deviceFull": "Web",
       "id": "805802961528090624",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۹/۱۵, ۱۹:۲۶:۱۱",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -51081,7 +51082,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1176377403851120641/Frhe5547_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 دستگاه",
     "color": "var(--xf-orange)"
   },
   "mirzaaliayatol1": {
@@ -51265,9 +51266,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1052785747919482880",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۷/۲۶, ۸:۲۷:۳۶",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -51275,7 +51276,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1052786507574960128/9S8pHCp__400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone",
     "color": "var(--xf-orange)"
   },
   "mehrzad_danesh": {
@@ -51354,19 +51355,19 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "2435620488",
-      "created": "Invalid Date",
+      "created": "۱۳۹۳/۱/۲۰, ۲۰:۰۸:۴۵",
       "renamed": 0,
       "isAccurate": false,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1988997621927550976/FgSPAtIw_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "طبیعی"
     },
-    "pillText": "📍 Iran",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Iran | 📱 Android",
+    "color": "var(--xf-green)"
   },
   "pborazjani": {
     "data": {
@@ -51499,9 +51500,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "879435226061185026",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۴/۵, ۲۱:۲۴:۳۱",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -51509,7 +51510,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1993073758605651969/6PXSHx2q_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "midarimedia": {
@@ -51517,9 +51518,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1862910469175984128",
-      "created": "Invalid Date",
+      "created": "۱۴۰۳/۹/۱۰, ۲۰:۵۵:۲۸",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -51527,7 +51528,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1864031039959572480/XU3pyU_H_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone",
     "color": "var(--xf-orange)"
   },
   "IRANinBRAZIL": {
@@ -51801,10 +51802,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "3261287972",
-      "created": "Invalid Date",
+      "created": "۱۳۹۴/۴/۹, ۱۳:۳۸:۱۱",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -51812,7 +51813,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1516335922257743875/y_nzxqNg_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "rezakarbalaee": {
@@ -52715,10 +52716,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1562361620101079043",
-      "created": "Invalid Date",
+      "created": "۱۴۰۱/۶/۲, ۹:۵۰:۵۹",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -52726,7 +52727,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1987232218004008960/4FhOBEVK_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "fatemisadr_ir": {
@@ -62108,9 +62109,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1406681885376499712",
-      "created": "Invalid Date",
+      "created": "۱۴۰۰/۳/۳۰, ۱۹:۳۴:۵۵",
       "renamed": 13,
       "isAccurate": true,
       "isIdVerified": false,
@@ -62118,7 +62119,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1853539972667629569/aWXmPxzb_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "valiesmaeili": {
@@ -62359,10 +62360,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1525529425",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۳/۲۷, ۱۹:۱۴:۲۰",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -62370,7 +62371,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1930236730348548096/jXjyFY1F_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Faghihimostafa1": {
@@ -62378,9 +62379,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "867063705636417537",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۳/۲, ۱۸:۰۴:۳۱",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -62388,7 +62389,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1863974357900443648/hNBixyh9_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "nazary43": {
@@ -62431,10 +62432,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "915206765721071616",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۷/۱۱, ۱۴:۲۷:۵۱",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -62442,7 +62443,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/983404786476347393/COMAe4mO_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "seemorgh_anka": {
@@ -62557,10 +62558,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "786231933051215872",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۷/۲۱, ۱۶:۴۷:۵۵",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -62568,7 +62569,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1680280113353568257/hJdFD0E2_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "AliEtaMedia": {
@@ -62593,10 +62594,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1589355228",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۴/۲۱, ۲۱:۵۰:۳۰",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -62604,17 +62605,17 @@
       "avatar": "https://pbs.twimg.com/profile_images/1985994628856758272/srXFxWGH_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "mortezagolpoor": {
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "3014418428",
-      "created": "Invalid Date",
+      "created": "۱۳۹۳/۱۱/۲۰, ۱۴:۱۹:۲۷",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -62622,7 +62623,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1736668478482886656/NWM-vJ67_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "feyzarab": {
@@ -66343,10 +66344,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1227221292685938688",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۱۱/۲۲, ۱۳:۲۲:۱۸",
       "renamed": 3,
       "isAccurate": true,
       "isIdVerified": false,
@@ -66354,7 +66355,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1629907093821030406/iwm_tcSL_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "musavi_mansour": {
@@ -67667,7 +67668,10 @@
       "riskLabel": "طبیعی"
     },
     "pillText": "📍 France | 📱 Android (Iran)",
-    "color": "var(--xf-green)"
+    "color": "var(--xf-green)",
+    "tags": [
+      "loc_change"
+    ]
   },
   "irani_65": {
     "data": {
@@ -69652,10 +69656,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1173235587182202880",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۶/۲۴, ۱۵:۰۳:۲۳",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -69663,7 +69667,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1293406804727271424/uWHbZ3Ti_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "mohamadtaherii": {
@@ -69671,9 +69675,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "855787875916500992",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۲/۲, ۱۵:۱۸:۲۴",
       "renamed": 3,
       "isAccurate": true,
       "isIdVerified": false,
@@ -69681,17 +69685,17 @@
       "avatar": "https://pbs.twimg.com/profile_images/1369408924613554190/JHIB_m4B_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "shirzad_ma": {
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "987717016609017856",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۲/۱, ۱۶:۳۷:۴۲",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -69699,7 +69703,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1444406980068593664/6zHQYuy-_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "RezaBehzadian": {
@@ -70820,30 +70824,30 @@
   },
   "soroushonline": {
     "data": {
-      "country": "نامشخص",
-      "countryCode": "نامشخص",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "48705095",
-      "created": "Invalid Date",
+      "created": "۱۳۸۸/۳/۲۹, ۱۴:۲۹:۲۴",
       "renamed": 0,
-      "isAccurate": false,
+      "isAccurate": true,
       "isIdVerified": false,
       "langCode": null,
       "avatar": "https://pbs.twimg.com/profile_images/1655101251443367938/OdGLskGy_400x400.jpg",
-      "riskLabel": "هشدار"
+      "riskLabel": "ناهنجاری"
     },
-    "pillText": "📱 Web/Other",
-    "color": "var(--xf-red)"
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)"
   },
   "BaghaniAlireza": {
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1008716380936523777",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۳/۲۸, ۱۵:۲۱:۴۱",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -70851,7 +70855,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1008717272352018435/6tcttlaF_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "arezootz": {
@@ -71450,10 +71454,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1339114260694261761",
-      "created": "Invalid Date",
+      "created": "۱۳۹۹/۹/۲۶, ۷:۴۷:۵۹",
       "renamed": 40,
       "isAccurate": true,
       "isIdVerified": false,
@@ -71461,7 +71465,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1993600967439175680/HGx16cIC_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "znbrahimi": {
@@ -72294,9 +72298,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1036596127",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۱۰/۶, ۷:۵۰:۳۹",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -72304,7 +72308,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1843961069158494208/whJMXFgh_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "mowlaverdi": {
@@ -73337,10 +73341,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1151928299871965186",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۴/۲۷, ۱۹:۵۴:۴۳",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -73348,7 +73352,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1963641636224634880/MNcKjSCM_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Jaber_Velayat3": {
@@ -73390,11 +73394,11 @@
   "smto": {
     "data": {
       "country": "غرب آسیا",
-      "countryCode": "غرب آسیا",
+      "countryCode": "West Asia",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (North America)",
       "id": "14498809",
-      "created": "Invalid Date",
+      "created": "۱۳۸۷/۲/۴, ۱۹:۵۱:۰۸",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -73402,7 +73406,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/651425301973471232/cYc1KE3s_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 غرب آسیا",
+    "pillText": "📍 غرب آسیا | 📱 iPhone (North America)",
     "color": "var(--xf-orange)"
   },
   "SafariZeinab": {
@@ -73482,9 +73486,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1022092298",
-      "created": "Invalid Date",
+      "created": "۱۳۹۱/۹/۲۹, ۱۳:۳۲:۵۲",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -73492,7 +73496,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1236025735091011586/MSenIjdT_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "HosseinKiani20": {
@@ -73518,9 +73522,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "703889386849570816",
-      "created": "Invalid Date",
+      "created": "۱۳۹۴/۱۲/۹, ۱۰:۲۸:۰۲",
       "renamed": 3,
       "isAccurate": true,
       "isIdVerified": false,
@@ -73528,7 +73532,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1760454301657296896/AtITDvym_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "Yasghanbarpoor": {
@@ -73750,9 +73754,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1220413867559354368",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۱۱/۳, ۱۸:۳۲:۱۱",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -73760,7 +73764,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1951656339005915136/5RKEJIe6_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "David22896329": {
@@ -75924,9 +75928,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "513478434",
-      "created": "Invalid Date",
+      "created": "۱۳۹۰/۱۲/۱۳, ۱۸:۵۶:۱۲",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -75934,7 +75938,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1950553459146539008/A8o70BsL_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "PejmanMousavi": {
@@ -75960,9 +75964,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1643646378592161795",
-      "created": "Invalid Date",
+      "created": "۱۴۰۲/۱/۱۶, ۱۷:۰۶:۵۶",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -75970,7 +75974,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1948639535681712128/5Jm1zuCF_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "Sahand_Ava": {
@@ -76356,9 +76360,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "2392433731",
-      "created": "Invalid Date",
+      "created": "۱۳۹۲/۱۲/۲۵, ۹:۳۴:۳۲",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -76366,7 +76370,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1324461848293507072/UcQ43C5M_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "mojganjamshidi7": {
@@ -76518,9 +76522,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "38672631",
-      "created": "Invalid Date",
+      "created": "۱۳۸۸/۲/۱۸, ۱۵:۱۳:۱۲",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -76528,7 +76532,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1925833990084206592/qw5N2MWi_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "smmirkhani": {
@@ -76716,9 +76720,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "883052519060119553",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۴/۱۵, ۲۰:۵۸:۲۱",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -76726,7 +76730,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1984258080285003776/wNWDBlpP_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "fahimehtabaee1": {
@@ -77039,10 +77043,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "3292527943",
-      "created": "Invalid Date",
+      "created": "۱۳۹۴/۵/۳, ۱۲:۱۷:۳۸",
       "renamed": 0,
       "isAccurate": true,
       "isIdVerified": false,
@@ -77050,7 +77054,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/909468323850551296/l-v0uUG__400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "imnevereal": {
@@ -77130,9 +77134,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1555468118243385344",
-      "created": "Invalid Date",
+      "created": "۱۴۰۱/۵/۱۴, ۹:۱۸:۱۸",
       "renamed": 0,
       "isAccurate": false,
       "isIdVerified": false,
@@ -77140,7 +77144,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1950250847096471553/y-fAJl-X_400x400.jpg",
       "riskLabel": "هشدار"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-red)"
   },
   "Sedaaye_iran": {
@@ -77670,9 +77674,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1024245446976385024",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۵/۹, ۱۱:۴۸:۳۸",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -77680,7 +77684,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1970047613920587776/Bz_7Pj7R_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "zhojabri_n": {
@@ -77778,9 +77782,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1577585267363422210",
-      "created": "Invalid Date",
+      "created": "۱۴۰۱/۷/۱۳, ۱۰:۰۴:۰۰",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -77788,7 +77792,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1749221038469087232/GxjjZFva_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "SoleymaniHanie": {
@@ -77903,10 +77907,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1133616096563666944",
-      "created": "Invalid Date",
+      "created": "۱۳۹۸/۳/۸, ۷:۰۸:۳۳",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -77914,7 +77918,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1822024036890619904/SXYBql2X_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Americana_ir": {
@@ -78316,9 +78320,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United Kingdom)",
       "id": "752759024483987456",
-      "created": "Invalid Date",
+      "created": "۱۳۹۵/۴/۲۲, ۷:۵۸:۳۱",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -78326,7 +78330,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1840471394338897920/thjhE7dD_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United Kingdom)",
     "color": "var(--xf-orange)"
   },
   "n_baratii": {
@@ -78388,9 +78392,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1803197130808381440",
-      "created": "Invalid Date",
+      "created": "۱۴۰۳/۳/۲۹, ۲۳:۴۴:۴۴",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -78398,7 +78402,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1851168712784580608/S2jQqN0y_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "sayedaminpakdel": {
@@ -78441,10 +78445,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "Web",
+      "deviceFull": "Web",
       "id": "946749472536649728",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۱۰/۸, ۱۴:۲۷:۱۸",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -78452,7 +78456,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1994483235749785600/srFHx1E__400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Web",
     "color": "var(--xf-orange)"
   },
   "DavoodiMahbobe": {
@@ -79161,10 +79165,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "913398803180466176",
-      "created": "Invalid Date",
+      "created": "۱۳۹۶/۷/۶, ۱۴:۴۳:۳۹",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -79172,7 +79176,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1989431016163774465/Owyo7C1V_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "Abbasian313": {
@@ -79198,9 +79202,9 @@
       "country": "Iran",
       "countryCode": "Iran",
       "device": "iPhone",
-      "deviceFull": "iPhone",
+      "deviceFull": "iPhone (United States)",
       "id": "1843314005093261312",
-      "created": "Invalid Date",
+      "created": "۱۴۰۳/۷/۱۶, ۱۶:۳۵:۰۹",
       "renamed": 2,
       "isAccurate": true,
       "isIdVerified": false,
@@ -79208,7 +79212,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1992907853762371584/Hy_BOpJA_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
     "color": "var(--xf-orange)"
   },
   "smomeni1988": {
@@ -79377,10 +79381,10 @@
     "data": {
       "country": "Iran",
       "countryCode": "Iran",
-      "device": "iPhone",
-      "deviceFull": "iPhone",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
       "id": "1888565528169504768",
-      "created": "Invalid Date",
+      "created": "۱۴۰۳/۱۱/۲۱, ۱۲:۲۸:۱۵",
       "renamed": 1,
       "isAccurate": true,
       "isIdVerified": false,
@@ -79388,7 +79392,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1956768679149830144/V9x7csDk_400x400.jpg",
       "riskLabel": "ناهنجاری"
     },
-    "pillText": "📍 Iran",
+    "pillText": "📍 Iran | 📱 Android (Iran)",
     "color": "var(--xf-orange)"
   },
   "EEbadi313": {
@@ -79448,19 +79452,17 @@
   "namesiah": {
     "data": {
       "country": "نامشخص",
-      "countryCode": "نامشخص",
-      "device": "Web/Other",
-      "deviceFull": "Web/Other",
+      "device": "نامشخص",
+      "deviceFull": "نامشخص",
       "id": "981887678345043968",
-      "created": "Invalid Date",
+      "created": "۱۳۹۷/۱/۱۶, ۱۴:۳۳:۵۹",
       "renamed": 0,
-      "isAccurate": false,
       "isIdVerified": false,
       "langCode": "fa",
       "avatar": "https://pbs.twimg.com/profile_images/1878855751160004608/lB1dJ3x8_400x400.jpg",
       "riskLabel": "هشدار"
     },
-    "pillText": "📱 Web/Other",
+    "pillText": "📱 نامشخص",
     "color": "var(--xf-red)"
   },
   "erfanafre": {
@@ -81267,5 +81269,3031 @@
     },
     "pillText": "📍 Iran",
     "color": "var(--xf-orange)"
+  },
+  "missdriedflower": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1229516462471237638",
+      "created": "۱۳۹۸/۱۱/۲۸, ۲۱:۲۲:۲۸",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1687384071901495296/GLxMcYse_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 iPhone (United States)",
+    "color": "var(--xf-red)"
+  },
+  "AhmadSharifzad": {
+    "data": {
+      "country": "Central Asia",
+      "countryCode": "Central Asia",
+      "device": "iPhone",
+      "deviceFull": "iPhone (Europe)",
+      "id": "1607036781706223616",
+      "created": "۱۴۰۱/۱۰/۴, ۱۵:۳۳:۳۱",
+      "renamed": 13,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1986103231299428352/Pw0KO77V_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Central Asia | 📱 iPhone (Europe)",
+    "color": "var(--xf-green)"
+  },
+  "DrwdA42828": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1842096884044722177",
+      "created": "۱۴۰۳/۷/۱۳, ۷:۵۹:۱۸",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1867653290302885888/AaalnB9Q_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "Shollanshah": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1782104857408659456",
+      "created": "۱۴۰۳/۲/۲, ۱۸:۵۲:۰۴",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1917720192274112512/jE4l9NpV_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "__Injaneb96": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1108428545058054145",
+      "created": "۱۳۹۷/۱۲/۲۹, ۱۸:۰۲:۱۳",
+      "renamed": 2,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1877387182236749824/_C5Rc6ip_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-green)"
+  },
+  "Kh5065": {
+    "data": {
+      "country": "Bangladesh",
+      "countryCode": "Bangladesh",
+      "device": "Android",
+      "deviceFull": "Android (Bangladesh)",
+      "id": "1868216030096703488",
+      "created": "۱۴۰۳/۹/۲۵, ۸:۴۸:۳۰",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1971635736828084224/Sq3ojBSy_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Bangladesh | 📱 Android (Bangladesh)",
+    "color": "var(--xf-green)"
+  },
+  "onlyparsa": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "215007268",
+      "created": "۱۳۸۹/۸/۲۱, ۱۹:۴۱:۲۴",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1964642818573381632/IAdlur1a_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "Rf_farhadi": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1324737166459740167",
+      "created": "۱۳۹۹/۸/۱۶, ۱۵:۳۵:۴۶",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1769798318656253952/1isw6w0G_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-red)"
+  },
+  "AdamSchefter": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "51263592",
+      "created": "۱۳۸۸/۴/۵, ۲۳:۵۵:۲۸",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/793924061843914752/ycm8ibEE_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-green)"
+  },
+  "hassan26695572": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1634578094437670913",
+      "created": "۱۴۰۱/۱۲/۲۰, ۱۵:۳۲:۵۹",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1930042573416017920/_UCn0oh4_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United Kingdom | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "MJ_Zaker": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1543199408879181824",
+      "created": "۱۴۰۱/۴/۱۱, ۱۲:۴۷:۳۱",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1611122129906409472/F1XqKM0G_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 Web",
+    "color": "var(--xf-red)"
+  },
+  "ya3er_ap": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "869145058825601024",
+      "created": "۱۳۹۶/۳/۸, ۱۱:۵۵:۰۴",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1861851898703130624/jmXMok0F_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United Kingdom | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "MoeeniRazie": {
+    "data": {
+      "country": "France",
+      "countryCode": "France",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1274745533454864385",
+      "created": "۱۳۹۹/۴/۱, ۱۷:۴۶:۵۰",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1966945190372900864/6HKX7jkN_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 France | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "dhghn_frzd": {
+    "data": {
+      "country": "Kenya",
+      "countryCode": "Kenya",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1464317169756700672",
+      "created": "۱۴۰۰/۹/۵, ۱۹:۳۶:۵۲",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1847038233542017024/ENkTpwgR_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Kenya | 📱 iPhone (United States)",
+    "color": "var(--xf-red)"
+  },
+  "vakilipor": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1743357119900893184",
+      "created": "۱۴۰۲/۱۰/۱۵, ۱۹:۴۲:۱۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1744709242265698304/gXhaKP96_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Germany | 📱 Web",
+    "color": "var(--xf-green)"
+  },
+  "leil_a2": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1641505339102076929",
+      "created": "۱۴۰۲/۱/۱۰, ۱۹:۱۹:۲۳",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1641506797797138439/WFpN1DrQ_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 North America | 📱 Android (West Asia)",
+    "color": "var(--xf-green)"
+  },
+  "tavakolii1001": {
+    "data": {
+      "country": "France",
+      "countryCode": "France",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1303685744654012416",
+      "created": "۱۳۹۹/۶/۱۹, ۱۴:۲۵:۱۳",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1722150784966492160/RBBjbWbf_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 France | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "J_Rezazadeh": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1321915182407405573",
+      "created": "۱۳۹۹/۸/۸, ۲۰:۴۲:۰۶",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1789660355494359042/00mrEuVd_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "alireza_zadbar": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "936678338009161728",
+      "created": "۱۳۹۶/۹/۱۰, ۱۹:۲۸:۱۳",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1711320883606831104/o3np2fu1_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "Exynusss": {
+    "data": {
+      "country": "Europe",
+      "countryCode": "Europe",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1586739037196402688",
+      "created": "۱۴۰۱/۸/۸, ۱۵:۱۸:۳۷",
+      "renamed": 4,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1992948523793252352/I6WHO5hq_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Europe | 📱 Android (West Asia)",
+    "color": "var(--xf-green)"
+  },
+  "Kazem_Mi": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1580458780520841216",
+      "created": "۱۴۰۱/۷/۲۱, ۸:۲۲:۰۰",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1993720678722244611/To4GUz3d_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United Kingdom | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "hamin_media": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1267470527741992960",
+      "created": "۱۳۹۹/۳/۱۲, ۱۵:۵۹:۳۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1695140047660494848/Mm4q01Rv_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)"
+  },
+  "SH1eL23": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1966123787142975488",
+      "created": "۱۴۰۴/۶/۲۰, ۱۳:۵۷:۲۲",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1966389749507129344/9bBfjgnJ_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "vida_rabbani": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "2889560387",
+      "created": "۱۳۹۳/۹/۲, ۱۹:۰۷:۴۷",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1910351577191256064/NrWyziJA_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 iPhone (United States)",
+    "color": "var(--xf-red)"
+  },
+  "MotherlandRobot": {
+    "data": {
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "58677635",
+      "created": "۱۳۸۸/۴/۳۰, ۳:۳۶:۲۵",
+      "renamed": 3,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1856841174562078720/jzud-wDQ_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 غرب آسیا | 📱 Android (West Asia)",
+    "color": "var(--xf-orange)"
+  },
+  "MiladLankarany": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Android",
+      "deviceFull": "Android (Canada)",
+      "id": "1304910996",
+      "created": "۱۳۹۲/۱/۶, ۱۷:۰۹:۵۹",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/3434076394/b84bd1594f6b6924b4492a8743b08d0d_400x400.jpeg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 Canada | 📱 Android (Canada)",
+    "color": "var(--xf-green)"
+  },
+  "AkhavanSog84586": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1657626347915673602",
+      "created": "۱۴۰۲/۲/۲۴, ۷:۰۰:۴۰",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1729686321428340738/6QCKfeoP_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "Sailor199217": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1589513385384763392",
+      "created": "۱۴۰۱/۸/۱۶, ۷:۰۱:۵۰",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1589513881080184833/NI3h91Aa_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "virguevaraa": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "996450497182732288",
+      "created": "۱۳۹۷/۲/۲۵, ۱۹:۰۱:۲۶",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1236086915356598278/vbhg9yQE_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 United States | 📱 Web",
+    "color": "var(--xf-red)"
+  },
+  "MitraGatmiri": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "3948754512",
+      "created": "۱۳۹۴/۷/۲۷, ۱۷:۳۹:۰۳",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1636472555442962434/hCoSsHyh_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 Canada | 📱 Web",
+    "color": "var(--xf-green)"
+  },
+  "Nima95933609": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1602982111786450946",
+      "created": "۱۴۰۱/۹/۲۳, ۱۱:۰۱:۴۸",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1741890253919576064/bR-nvayW_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "freedom_hugo": {
+    "data": {
+      "country": "Europe",
+      "countryCode": "Europe",
+      "device": "Android",
+      "deviceFull": "Android (Europe)",
+      "id": "1019635645558542338",
+      "created": "۱۳۹۷/۴/۲۷, ۱۸:۳۰:۵۶",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1211971695818543104/CGnMhv5z_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 Europe | 📱 Android (Europe)",
+    "color": "var(--xf-green)"
+  },
+  "mhasadi78": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "838528477557030914",
+      "created": "۱۳۹۵/۱۲/۱۵, ۲۳:۱۵:۴۲",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1934397179793129473/evl2PXDK_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 Web",
+    "color": "var(--xf-red)"
+  },
+  "hazhgalous": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1671817761385861121",
+      "created": "۱۴۰۲/۴/۱, ۱۰:۵۱:۰۵",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1702384903789088768/zbgpVY23_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "majidreza83": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "Android",
+      "deviceFull": "Android (United Kingdom)",
+      "id": "1854556558270537734",
+      "created": "۱۴۰۳/۸/۱۷, ۱۶:۰۹:۰۱",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1854572543560007680/AfLBs0Hk_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 United Kingdom | 📱 Android (United Kingdom)",
+    "color": "var(--xf-green)"
+  },
+  "mneyest": {
+    "data": {
+      "country": "Sweden",
+      "countryCode": "Sweden",
+      "device": "Android",
+      "deviceFull": "Android (Sweden)",
+      "id": "868461191043133440",
+      "created": "۱۳۹۶/۳/۶, ۱۴:۳۷:۳۷",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1751241184251441152/lm0_qRBt_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Sweden | 📱 Android (Sweden)",
+    "color": "var(--xf-red)"
+  },
+  "amirarsalan2028": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1626205941564846083",
+      "created": "۱۴۰۱/۱۱/۲۷, ۱۳:۰۵:۰۱",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1626206013702705152/_3YK1hRs_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "AzadehEhsan84": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1847386471071961091",
+      "created": "۱۴۰۳/۷/۲۷, ۲۲:۱۷:۳۱",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1848624213646589952/J4tor24y_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "MajidTheGeek": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "860540402633453568",
+      "created": "۱۳۹۶/۲/۱۵, ۱۸:۰۳:۱۴",
+      "renamed": 14,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1995223337581129728/0Dn1qhj3_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "Iranian_sol": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "iPhone",
+      "deviceFull": "iPhone (North America)",
+      "id": "1321931349805142023",
+      "created": "۱۳۹۹/۸/۸, ۲۱:۴۷:۳۷",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1794090180418084865/PKO250Nz_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 North America | 📱 iPhone (North America)",
+    "color": "var(--xf-red)"
+  },
+  "IrqSoheil": {
+    "data": {
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1602490741225406466",
+      "created": "۱۴۰۱/۹/۲۲, ۲:۲۹:۱۷",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1744461460489613312/M0ARyybr_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 غرب آسیا | 📱 Android (West Asia)",
+    "color": "var(--xf-orange)"
+  },
+  "r_shahali": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "983315522422001664",
+      "created": "۱۳۹۷/۱/۲۰, ۱۳:۰۷:۴۴",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1934003152128233473/kOZmGqTI_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "marseilleiran": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1559896168347435008",
+      "created": "۱۴۰۱/۵/۲۶, ۱۴:۳۳:۵۶",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1737000401654652928/buTZ5fDJ_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "RDAlMarini": {
+    "data": {
+      "country": "France",
+      "countryCode": "France",
+      "device": "Android",
+      "deviceFull": "Android (France)",
+      "id": "1597639459033550849",
+      "created": "۱۴۰۱/۹/۸, ۱۷:۱۲:۰۱",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1966962565918937088/bmehp474_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 France | 📱 Android (France)",
+    "color": "var(--xf-green)"
+  },
+  "ghodghodbimahal": {
+    "data": {
+      "country": "Turkey",
+      "countryCode": "Turkey",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1881767244058734592",
+      "created": "۱۴۰۳/۱۱/۲, ۱۸:۱۴:۵۰",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1881768158329004033/lq9uEosd_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Turkey | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "taghei8": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1870185192150769665",
+      "created": "۱۴۰۳/۹/۳۰, ۱۹:۱۱:۲۷",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)"
+  },
+  "Mekianje": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Netherlands)",
+      "id": "1414606262822739972",
+      "created": "۱۴۰۰/۴/۲۱, ۱۶:۲۳:۵۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1684825080012951552/nJKBjw23_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Netherlands)",
+    "color": "var(--xf-green)"
+  },
+  "autnews_org": {
+    "data": {
+      "country": "Armenia",
+      "countryCode": "Armenia",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1737369820994117632",
+      "created": "۱۴۰۲/۹/۲۹, ۷:۱۱:۰۰",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1770487351640219648/NbM3MvS5_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Armenia | 📱 Web",
+    "color": "var(--xf-green)"
+  },
+  "middleofgalaxy2": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "4892431427",
+      "created": "۱۳۹۴/۱۱/۲۰, ۱۶:۵۶:۵۰",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 Web",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "siah_o_sefid": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1955943616758661126",
+      "created": "۱۴۰۴/۵/۲۳, ۱۱:۴۵:۵۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1990099099014795264/XLSg82pH_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 United Kingdom | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "mehdi_tahmasby": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1385039785941688320",
+      "created": "۱۴۰۰/۲/۲, ۲:۱۷:۱۴",
+      "renamed": 4,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1949208342552788992/NisDdOP1_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Iran | 📱 Web",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "NonBahrami": {
+    "data": {
+      "country": "Spain",
+      "countryCode": "Spain",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1942197432449658881",
+      "created": "۱۴۰۴/۴/۱۶, ۱۳:۲۳:۲۱",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1942197747517394944/fRCn0jUn_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Spain | 📱 Web",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "AS_emank313": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1612025864610267136",
+      "created": "۱۴۰۱/۱۰/۱۸, ۹:۵۸:۳۴",
+      "renamed": 7,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1847686013080018944/w97RKvws_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "nilu_yari": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1590312232197529600",
+      "created": "۱۴۰۱/۸/۱۸, ۱۱:۵۶:۱۰",
+      "renamed": 6,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1993336040577232896/Ffsm3xQR_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "MasoudSa8800": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1917242332753358848",
+      "created": "۱۴۰۴/۲/۹, ۱۶:۳۹:۵۰",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1986851468935139328/satFMHaE_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "M__rousta": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1390458451831164931",
+      "created": "۱۴۰۰/۲/۱۷, ۱:۰۸:۳۲",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1992157336132308992/z6Dcp3Af_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 North America | 📱 Android (West Asia)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "msmj1234t": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1852301467928993792",
+      "created": "۱۴۰۳/۸/۱۱, ۱۰:۵۰:۳۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1933178856275390464/RICmgQTz_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "delbar_jan_afza": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1396307205008158723",
+      "created": "۱۴۰۰/۳/۲, ۴:۲۹:۲۵",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1396706197298839553/FCRKxqn3_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Sunshine381942": {
+    "data": {
+      "country": "France",
+      "countryCode": "France",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1473953686678384645",
+      "created": "۱۴۰۰/۱۰/۲, ۹:۵۰:۲۰",
+      "renamed": 6,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1992956564555055104/pHaWrAVJ_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 France | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "mirlohi_ir": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "736979722966552576",
+      "created": "۱۳۹۵/۳/۹, ۱۸:۵۷:۱۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1906611212646825984/_mcQYTrK_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "Sobhan_fadai": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1467836721710907394",
+      "created": "۱۴۰۰/۹/۱۵, ۱۲:۴۳:۱۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1467842240991035395/WbvLVrlC_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "havas_paart": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1023664436173856770",
+      "created": "۱۳۹۷/۵/۷, ۲۱:۱۹:۵۵",
+      "renamed": 9,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1761327642966466560/GXMYfv4S_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "ir_rezaee": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "3437747915",
+      "created": "۱۳۹۴/۶/۲, ۱۰:۵۰:۰۱",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1800813335757119488/SA66m6pl_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Web",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "panda_khaste313": {
+    "data": {
+      "country": "Turkey",
+      "countryCode": "Turkey",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1511600431268569088",
+      "created": "۱۴۰۱/۱/۱۷, ۸:۰۳:۵۶",
+      "renamed": 18,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1952807708081504256/dynlZMtO_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Turkey | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "FAZEL_TWT": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1033427380092760064",
+      "created": "۱۳۹۷/۶/۳, ۱۹:۵۴:۲۲",
+      "renamed": 7,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1907027505178963968/-jTEGiUw_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "komeyll_ir": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1537095027410751488",
+      "created": "۱۴۰۱/۳/۲۵, ۱۶:۳۰:۰۰",
+      "renamed": 5,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1921208402773966848/GY8YC44x_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Seyed_X": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1469072972212318214",
+      "created": "۱۴۰۰/۹/۱۸, ۲۲:۳۴:۵۲",
+      "renamed": 11,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1979259561383989248/Z4CqeLy9_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "saharnazsol": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1465716624808464386",
+      "created": "۱۴۰۰/۹/۹, ۱۶:۱۸:۲۱",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1911806991179075584/0xitcuE-_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "AyehTolou": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1984678433960689664",
+      "created": "۱۴۰۴/۸/۱۰, ۱۷:۴۶:۴۸",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1984679182199087104/_W9RI3cU_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Canada | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "alrahil_313": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1555643923091030017",
+      "created": "۱۴۰۱/۵/۱۴, ۲۰:۵۷:۰۱",
+      "renamed": 4,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1992697625997430784/L3WWSRYz_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Oneamongfifty": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "3018597454",
+      "created": "۱۳۹۳/۱۱/۱۵, ۲۰:۱۸:۴۳",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1958520102761934848/CH85Vefs_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "M_shahryari84": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1801095428315783168",
+      "created": "۱۴۰۳/۳/۲۴, ۴:۳۳:۲۷",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1950770702270840834/eUuhBvfj_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 Web",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "az_khish": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1893776242148880384",
+      "created": "۱۴۰۳/۱۲/۵, ۲۱:۳۴:۰۴",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1968975945869484032/fIokISxn_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "hamidullah11532": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1862972665608241153",
+      "created": "۱۴۰۳/۹/۱۰, ۲۱:۳۲:۰۹",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1862972915941040128/VhVC1k-R_400x400.png",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 Germany | 📱 Web",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "smhastrategy": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Android",
+      "deviceFull": "Android (Canada)",
+      "id": "1844584237975879686",
+      "created": "۱۴۰۳/۷/۲۰, ۴:۴۳:۴۶",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1844585329258307596/gZBPNAjX_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Canada | 📱 Android (Canada)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "realsadrr": {
+    "data": {
+      "country": "Europe",
+      "countryCode": "Europe",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1898849549612904448",
+      "created": "۱۴۰۳/۱۲/۱۹, ۲۱:۳۳:۳۰",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1964799206960349184/8XBd4BJ4_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Europe | 📱 Android (West Asia)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Hosnasadat33": {
+    "data": {
+      "country": "France",
+      "countryCode": "France",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1850493771068096513",
+      "created": "۱۴۰۳/۸/۶, ۱۱:۰۴:۵۱",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1911699624718487552/l_yvoqns_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 France | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "sundancekidd83": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "874213844",
+      "created": "۱۳۹۱/۷/۲۰, ۲۰:۴۴:۵۶",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1879823031930929152/EdzRBwnl_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Web",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "AliSh_70": {
+    "data": {
+      "country": "Sweden",
+      "countryCode": "Sweden",
+      "device": "Android",
+      "deviceFull": "Android (Sweden)",
+      "id": "3616372395",
+      "created": "۱۳۹۴/۶/۲۰, ۴:۵۱:۴۰",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1720137318034546688/jxcoIeIZ_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 Sweden | 📱 Android (Sweden)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Annafreud2025": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "4009516349",
+      "created": "۱۳۹۴/۷/۲۹, ۱۳:۵۳:۰۱",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1928139816828346368/tQ1FChs1_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "mushroom1369": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "716568241339019264",
+      "created": "۱۳۹۵/۱/۱۵, ۱۱:۰۹:۱۶",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1401337750977236992/uV0flOU5_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "m_shojae1": {
+    "data": {
+      "country": "نامشخص",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1216061618662014979",
+      "created": "۱۳۹۸/۱۰/۲۱, ۱۸:۱۸:۳۳",
+      "renamed": 1,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1518248262599417857/bJ_J73il_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📱 Web",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "ghrakhshanii": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1770950553335390208",
+      "created": "۱۴۰۳/۱/۲, ۲۳:۰۸:۲۰",
+      "renamed": 2,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1800175338359554048/nA2GyZ8g_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 iPhone (United States)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "shamsollahkhan": {
+    "data": {
+      "country": "Europe",
+      "countryCode": "Europe",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "4912842765",
+      "created": "۱۳۹۴/۱۱/۲۶, ۱۰:۲۷:۰۱",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1988715999114227712/GrfcPTpN_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Europe | 📱 Web",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "sadrahatamnia1": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "894529645810417664",
+      "created": "۱۳۹۶/۵/۱۶, ۱۳:۰۴:۲۱",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1933125324771868672/RDIjsvYI_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "hMCxeEf3CmZsvld": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1361669315100090370",
+      "created": "۱۳۹۹/۱۱/۲۸, ۱۳:۳۱:۰۴",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1847552258470240256/gIsra07p_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "madadimajid": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "2437266848",
+      "created": "۱۳۹۳/۱/۲۱, ۱۷:۵۰:۲۰",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1934931240563470336/75tE26Dz_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 iPhone (United States)",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "SANDBADBANDARI": {
+    "data": {
+      "country": "France",
+      "countryCode": "France",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1633607021315407874",
+      "created": "۱۴۰۱/۱۲/۱۷, ۲۳:۱۴:۳۳",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1949145275043299328/nKMbp2cI_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 France | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "ARBakhtiar86": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1597691533507051523",
+      "created": "۱۴۰۱/۹/۸, ۲۰:۳۹:۱۰",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1597692384673931264/AlrOw6f5_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 United States | 📱 Web",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "BiruniKhorasan": {
+    "data": {
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "iPhone",
+      "deviceFull": "iPhone (Europe)",
+      "id": "1119948160711974913",
+      "created": "۱۳۹۸/۲/۱, ۱۳:۵۷:۰۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1992620034758488064/DHUwjlst_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 غرب آسیا | 📱 iPhone (Europe)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "Bagh_eBabur": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "iPhone",
+      "deviceFull": "iPhone (North America)",
+      "id": "3330603592",
+      "created": "۱۳۹۴/۳/۲۷, ۳:۰۳:۱۹",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/696745097078165504/Dk_tvTlk_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 North America | 📱 iPhone (North America)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "PersianPoetics": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1144941213268791296",
+      "created": "۱۳۹۸/۴/۸, ۱۳:۱۰:۳۲",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1807558265577918464/Tus4fUXR_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "menavisualss": {
+    "data": {
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1539899668481679361",
+      "created": "۱۴۰۱/۴/۲, ۱۰:۱۴:۳۵",
+      "renamed": 2,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1791133135427588096/FPytCTVx_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 غرب آسیا | 📱 Android (West Asia)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "propagandopolis": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United Kingdom)",
+      "id": "1009049990919000065",
+      "created": "۱۳۹۷/۳/۲۹, ۱۳:۲۷:۱۹",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1874922662209732608/lD3mlDOF_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 United Kingdom | 📱 iPhone (United Kingdom)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "circassianroots": {
+    "data": {
+      "country": "Europe",
+      "countryCode": "Europe",
+      "device": "iPhone",
+      "deviceFull": "iPhone (Europe)",
+      "id": "1576251408134840320",
+      "created": "۱۴۰۱/۷/۹, ۱۷:۴۳:۳۰",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1978339353232277506/24-4UAjR_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Europe | 📱 iPhone (Europe)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "sarkareelliyeh": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1200395121260408833",
+      "created": "۱۳۹۸/۹/۸, ۱۲:۴۴:۴۸",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1867302246506999808/uXKbUIzd_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "this_isomid": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "iPhone",
+      "deviceFull": "iPhone (North America)",
+      "id": "39795952",
+      "created": "۱۳۸۸/۲/۲۳, ۱۸:۱۹:۳۸",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1857141206670823424/l7hwvzSO_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 North America | 📱 iPhone (North America)",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "makmahan22": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1447501049594404866",
+      "created": "۱۴۰۰/۷/۱۹, ۱۰:۵۶:۴۲",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1478748675115470851/36YyYxdb_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "ZargaranNe89781": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1806992481457995777",
+      "created": "۱۴۰۳/۴/۹, ۱۱:۰۶:۳۲",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1962128012335263744/pq1XnUfm_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "javadamel": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "33928792",
+      "created": "۱۳۸۸/۲/۱, ۱۶:۰۱:۱۵",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1300493101434392577/x81re7SP_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Web",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "NeshanMaps": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "984511883859382272",
+      "created": "۱۳۹۷/۱/۲۳, ۲۰:۲۱:۳۹",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1315198024839290888/h4zS8ItC_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "NimaQazi": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "990489740",
+      "created": "۱۳۹۱/۹/۱۵, ۸:۳۲:۲۷",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1977679571370536960/n2FNhPJA_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "alireza2600": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "58320908",
+      "created": "۱۳۸۸/۴/۲۹, ۰:۱۱:۵۰",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1409474025680683010/Bd7U0Vvy_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "stup360": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "923284200631013376",
+      "created": "۱۳۹۶/۸/۳, ۲۱:۲۴:۴۲",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/923284866174726145/4A8-25Wv_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Germany | 📱 iPhone (United States)",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "Unshahrik": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "3872516775",
+      "created": "۱۳۹۴/۷/۱۳, ۱۷:۲۴:۱۴",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1626259992449028097/8Fy3Y9v4_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "hrahmadi8": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1430344646",
+      "created": "۱۳۹۲/۲/۲۵, ۱۳:۰۲:۱۸",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1144916872820924416/IL-DO6u-_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "moshhamedani": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "iPhone",
+      "deviceFull": "iPhone (North America)",
+      "id": "312996970",
+      "created": "۱۳۹۰/۳/۱۸, ۱:۳۴:۵۰",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1897279989684346880/Dq_NDAcr_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 North America | 📱 iPhone (North America)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "zahrarezaee1992": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1716721017228345344",
+      "created": "۱۴۰۲/۸/۲, ۸:۳۹:۴۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1964598960971993088/pHWgWmip_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": [
+      "loc_change"
+    ]
+  },
+  "behzad19mah": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1142936383633231873",
+      "created": "۱۳۹۸/۴/۳, ۰:۲۴:۰۳",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1848798899865100289/CVQd5xKY_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United Kingdom | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "mrpzbss": {
+    "data": {
+      "country": "United Kingdom",
+      "countryCode": "United Kingdom",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "1460135404838039558",
+      "created": "۱۴۰۰/۸/۲۴, ۶:۳۹:۵۳",
+      "renamed": 7,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1703067401254825984/ZpGJTxqF_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 United Kingdom | 📱 iPhone (United States)",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "sa_ha_r_130": {
+    "data": {
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1554881668527390726",
+      "created": "۱۴۰۱/۵/۱۲, ۱۸:۲۸:۳۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1964774972540207104/eOsAFrOH_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 غرب آسیا | 📱 Android (West Asia)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "amirabasMehrjo": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "992648659257835520",
+      "created": "۱۳۹۷/۲/۱۵, ۷:۱۴:۱۷",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1954317362255065088/9Ko58wcu_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 United States | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Reza68217401": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1490358925727870982",
+      "created": "۱۴۰۰/۱۱/۱۷, ۱۶:۱۷:۲۵",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1647151890591825921/0Z88n2rc_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "banoo_m_n": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1296092094495326211",
+      "created": "۱۳۹۹/۵/۲۹, ۱۵:۳۰:۲۳",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1647119045982842881/wF3waf0Y_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "parvaneh_9597": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1590026897643143169",
+      "created": "۱۴۰۱/۸/۱۷, ۱۷:۰۲:۳۷",
+      "renamed": 6,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1670910224515858434/naH4HcU2_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "moslem_FARAGHIL": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1248243776306503680",
+      "created": "۱۳۹۹/۱/۲۱, ۱۴:۳۸:۳۵",
+      "renamed": 6,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1839998422075559936/TII90T4Q_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "goldasteh3": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1389925813575892996",
+      "created": "۱۴۰۰/۲/۱۵, ۱۳:۵۳:۳۸",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1680879523905040387/CrMMrVzn_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "Mis_zohoor": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1352550748379369472",
+      "created": "۱۳۹۹/۱۱/۳, ۹:۳۷:۰۱",
+      "renamed": 4,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1956646919389798400/XBj5VZMU_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 North America | 📱 Android (West Asia)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "ashora78": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1560225673318391811",
+      "created": "۱۴۰۱/۵/۲۷, ۱۲:۲۳:۰۴",
+      "renamed": 3,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1933783123449266176/d21NAytM_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Canada | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "ramezany14001": {
+    "data": {
+      "country": "India",
+      "countryCode": "India",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1479805117452980229",
+      "created": "۱۴۰۰/۱۰/۱۸, ۱۳:۲۰:۲۶",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1681235683610853376/7_KYh2qH_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 India | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": [
+      "base_iran"
+    ]
+  },
+  "fatmhbanw11": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1516588763132092424",
+      "created": "۱۴۰۱/۱/۳۱, ۲:۲۶:۱۱",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1647048192951738368/oDwHt0kz_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "bahar_Frhni": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1562497324324384768",
+      "created": "۱۴۰۱/۶/۲, ۱۸:۴۹:۴۲",
+      "renamed": 4,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1850973008455778304/Wh-1x_oT_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Zahra_so52": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1553764179559038976",
+      "created": "۱۴۰۱/۵/۹, ۱۶:۲۷:۳۷",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1970562919625523201/0RlQ_xsv_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "Arash_Amirpur": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1498923534046875648",
+      "created": "۱۴۰۰/۱۲/۱۱, ۷:۳۰:۰۷",
+      "renamed": 48,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1720389407696453632/bj336271_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "zsadatk1997": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1594410942799806464",
+      "created": "۱۴۰۱/۸/۲۹, ۱۹:۲۳:۱۵",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1833926209438109696/Y7TwSN8r_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "mhmdy90120168": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1475075003033198593",
+      "created": "۱۴۰۰/۱۰/۵, ۱۲:۰۴:۳۷",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1877392591487905794/IMZ5p-Iu_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "khanommazaheri": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1321760325474127872",
+      "created": "۱۳۹۹/۸/۸, ۱۰:۲۶:۵۴",
+      "renamed": 3,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1908196234956791808/ZlztNuFV_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "motahareh8113": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1656664010526429185",
+      "created": "۱۴۰۲/۲/۲۱, ۱۵:۱۴:۳۱",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1973136561333022720/18UIFeyU_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Canada | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Smkomeil": {
+    "data": {
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1262956675507654658",
+      "created": "۱۳۹۹/۲/۳۱, ۵:۰۴:۴۰",
+      "renamed": 3,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1965530017267396608/7iQ7CeMF_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 غرب آسیا | 📱 Web",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "sadat_1402": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1498636246259834882",
+      "created": "۱۴۰۰/۱۲/۱۰, ۱۲:۲۸:۵۵",
+      "renamed": 10,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1934732570559959044/uDR70kGb_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "sarbazrahbaramm": {
+    "data": {
+      "country": "Netherlands",
+      "countryCode": "Netherlands",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1264169627195600897",
+      "created": "۱۳۹۹/۳/۳, ۱۳:۲۲:۰۲",
+      "renamed": 29,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1908049045269905408/EP2C657A_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Netherlands | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "torabi_esf": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1021244573375434752",
+      "created": "۱۳۹۷/۵/۱, ۵:۰۴:۱۴",
+      "renamed": 4,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1681315047241572357/ALRgkOXj_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "Delaram_e_jan": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1480274309050421248",
+      "created": "۱۴۰۰/۱۰/۱۹, ۲۰:۲۵:۵۵",
+      "renamed": 3,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1796597544270561280/KHTCK5aR_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "parsadib313": {
+    "data": {
+      "country": "Poland",
+      "countryCode": "Poland",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1247915671104733186",
+      "created": "۱۳۹۹/۱/۲۰, ۱۶:۵۴:۲۶",
+      "renamed": 17,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1707567402412576768/MODdxV2a_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Poland | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "f_safari_84": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1477530948375916546",
+      "created": "۱۴۰۰/۱۰/۱۲, ۶:۴۳:۴۸",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1910006670840721408/ZOBZshIE_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "a__shk": {
+    "data": {
+      "country": "France",
+      "countryCode": "France",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1318247382820204544",
+      "created": "۱۳۹۹/۷/۲۸, ۱۸:۴۸:۰۵",
+      "renamed": 2,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1762862080195952640/cbQ8foYv_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 France | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "vatanamiran67": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Saudi Arabia)",
+      "id": "1436024654985039876",
+      "created": "۱۴۰۰/۶/۱۸, ۱۸:۵۲:۴۸",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1682628289754550312/i3aGKmCd_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Saudi Arabia)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "chavoshi_m68": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1563453768816926720",
+      "created": "۱۴۰۱/۶/۵, ۱۰:۱۰:۱۸",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1646806460683149312/t2aBtnmG_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "FATEMEH_M9767": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1495363155148562442",
+      "created": "۱۴۰۰/۱۲/۱, ۱۱:۴۲:۲۹",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1599287470432075776/NHjsf4Rc_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "jnm_fdaye_rhbrm": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1383482692356886532",
+      "created": "۱۴۰۰/۱/۲۸, ۱۹:۰۹:۳۳",
+      "renamed": 3,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1868347076985204736/MdJ-p4Cp_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "Yaskabod1356": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1550867991813795840",
+      "created": "۱۴۰۱/۵/۱, ۱۶:۳۹:۵۲",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1647048453539737602/IeFYyxAt_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Web",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "FAHDWDI": {
+    "data": {
+      "country": "North America",
+      "countryCode": "North America",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1332250710281510913",
+      "created": "۱۳۹۹/۹/۷, ۹:۱۲:۳۴",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1689370567760109568/SH757dml_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 North America | 📱 Web",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "hosnaesmati": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Web",
+      "deviceFull": "Web",
+      "id": "1381484871655260164",
+      "created": "۱۴۰۰/۱/۲۳, ۶:۵۱:۱۹",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1647044910250356736/6lOjsVrq_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Web",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "mahna313": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1604830853384781825",
+      "created": "۱۴۰۱/۹/۲۸, ۱۳:۲۸:۰۹",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1752552564757803008/fqjcBSn9_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "samyra2007": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1609461182095659010",
+      "created": "۱۴۰۱/۱۰/۱۱, ۸:۰۷:۵۵",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1905896615321227264/-neRrNl6_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Canada | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "SRamaz62": {
+    "data": {
+      "country": "Iran",
+      "countryCode": "Iran",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1283679442351472640",
+      "created": "۱۳۹۹/۴/۲۶, ۹:۲۶:۵۶",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1653405877183868932/ThERXx1j_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 Iran | 📱 Android (Iran)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "alhadidi70": {
+    "data": {
+      "country": "غرب آسیا",
+      "countryCode": "West Asia",
+      "device": "Android",
+      "deviceFull": "Android (West Asia)",
+      "id": "1186374733618733057",
+      "created": "۱۳۹۸/۷/۲۹, ۲۱:۱۲:۴۸",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1906763578297778176/gVLrZ1gT_400x400.jpg",
+      "riskLabel": "ناهنجاری"
+    },
+    "pillText": "📍 غرب آسیا | 📱 Android (West Asia)",
+    "color": "var(--xf-orange)",
+    "note": "",
+    "tags": []
+  },
+  "roshanak_ast": {
+    "data": {
+      "country": "Cyprus",
+      "countryCode": "Cyprus",
+      "device": "iPhone",
+      "deviceFull": "iPhone (France)",
+      "id": "775658216",
+      "created": "۱۳۹۱/۶/۲, ۱۱:۲۵:۱۷",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1873004994896576512/b6iMOXiX_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 Cyprus | 📱 iPhone (France)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "naderifar": {
+    "data": {
+      "country": "Australia",
+      "countryCode": "Australia",
+      "device": "iPhone",
+      "deviceFull": "iPhone (Australia)",
+      "id": "51434437",
+      "created": "۱۳۸۸/۴/۶, ۱۴:۱۶:۰۲",
+      "renamed": 0,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1964301898351247360/9K-MOf1L_400x400.jpg",
+      "riskLabel": "هشدار"
+    },
+    "pillText": "📍 Australia | 📱 iPhone (Australia)",
+    "color": "var(--xf-red)",
+    "note": "",
+    "tags": []
+  },
+  "SepehriHamed": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "2166352618",
+      "created": "۱۳۹۲/۸/۱۲, ۱۳:۲۸:۳۶",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1980889766137634816/V5Z15lh__400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "BabakShekarabi": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "iPhone",
+      "deviceFull": "iPhone (Canada)",
+      "id": "978996880834158595",
+      "created": "۱۳۹۷/۱/۸, ۱۵:۰۷:۰۰",
+      "renamed": 0,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1253406421280075786/FpKSi0aS_400x400.jpg",
+      "riskLabel": "امن"
+    },
+    "pillText": "📍 Canada | 📱 iPhone (Canada)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "zarei_arad": {
+    "data": {
+      "country": "Canada",
+      "countryCode": "Canada",
+      "device": "Android",
+      "deviceFull": "Android (Canada)",
+      "id": "1244701394008977412",
+      "created": "۱۳۹۹/۱/۱۱, ۲۰:۰۲:۱۰",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1596012142666424320/gMukQbGu_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Canada | 📱 Android (Canada)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "Dr_Amir_Hamidi": {
+    "data": {
+      "country": "United States",
+      "countryCode": "United States",
+      "device": "iPhone",
+      "deviceFull": "iPhone (United States)",
+      "id": "2838307002",
+      "created": "۱۳۹۳/۷/۱۰, ۲۰:۴۹:۲۰",
+      "renamed": 1,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1411810780509474821/_gK_Qbjp_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 United States | 📱 iPhone (United States)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "shararehtalaeii": {
+    "data": {
+      "country": "Sweden",
+      "countryCode": "Sweden",
+      "device": "iPhone",
+      "deviceFull": "iPhone (Sweden)",
+      "id": "1555641574595432449",
+      "created": "۱۴۰۱/۵/۱۴, ۲۰:۴۸:۰۳",
+      "renamed": 2,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1738078054600077313/5P7EDxUM_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Sweden | 📱 iPhone (Sweden)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "ALBORZ_ANJOMAN": {
+    "data": {
+      "country": "Germany",
+      "countryCode": "Germany",
+      "device": "Android",
+      "deviceFull": "Android (Iran)",
+      "id": "1321876039652548608",
+      "created": "۱۳۹۹/۸/۸, ۱۸:۰۷:۲۳",
+      "renamed": 1,
+      "isAccurate": false,
+      "isIdVerified": false,
+      "langCode": "fa",
+      "avatar": "https://pbs.twimg.com/profile_images/1589153187658866690/-jMZauOa_400x400.jpg",
+      "riskLabel": "طبیعی"
+    },
+    "pillText": "📍 Germany | 📱 Android (Iran)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
+  },
+  "KalavaniSamad": {
+    "data": {
+      "country": "Switzerland",
+      "countryCode": "Switzerland",
+      "device": "iPhone",
+      "deviceFull": "iPhone (Switzerland)",
+      "id": "1105778072060657664",
+      "created": "۱۳۹۷/۱۲/۲۲, ۱۰:۳۰:۱۱",
+      "renamed": 3,
+      "isAccurate": true,
+      "isIdVerified": false,
+      "langCode": null,
+      "avatar": "https://pbs.twimg.com/profile_images/1920770446338756608/S8Ok3OcD_400x400.jpg",
+      "riskLabel": "احتیاط"
+    },
+    "pillText": "📍 Switzerland | 📱 iPhone (Switzerland)",
+    "color": "var(--xf-green)",
+    "note": "",
+    "tags": []
   }
 }
