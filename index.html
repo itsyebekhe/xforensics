@@ -74,7 +74,7 @@
         </button>
     </div>
 
-    <!-- Tutorial Modal -->
+    <!-- Tutorial Modal (Lazy Loaded Video) -->
     <div id="tutorial-modal" class="hidden fixed inset-0 z-[90] flex items-center justify-center bg-slate-950/90 backdrop-blur-md p-4 transition-opacity" onclick="if(event.target===this) toggleTutorial(false)">
         <div class="relative w-full max-w-5xl bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/10 flex flex-col h-[70vh] md:h-[80vh]">
             <div class="flex justify-between items-center p-4 bg-slate-900/80 border-b border-white/10 shrink-0 z-10">
@@ -82,10 +82,8 @@
                 <button onclick="toggleTutorial(false)" class="text-white/70 hover:text-white bg-white/10 hover:bg-red-600 rounded-full p-2 transition-colors"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button>
             </div>
             <div class="flex-grow bg-black relative w-full overflow-hidden">
-                <video id="tutorial-video" controls playsinline class="absolute inset-0 w-full h-full object-contain focus:outline-none">
-                    <source src="https://raw.githubusercontent.com/itsyebekhe/xforensics/refs/heads/main/xforensics%20tutorial.mp4" type="video/mp4">
-                    مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
-                </video>
+                <!-- Video tag is empty initially to prevent download on load -->
+                <video id="tutorial-video" controls playsinline class="absolute inset-0 w-full h-full object-contain focus:outline-none"></video>
             </div>
         </div>
     </div>
@@ -322,13 +320,15 @@
     <script>
         // --- CONSTANTS ---
         const DB_URL = "https://raw.githubusercontent.com/itsyebekhe/xforensics/main/database.json";
+        const VIDEO_URL = "https://raw.githubusercontent.com/itsyebekhe/xforensics/refs/heads/main/xforensics%20tutorial.mp4";
         const ITEMS_PER_PAGE = 30;
         const PERSIAN_NUMS = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
         const ENGLISH_NUMS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
         // --- STATE ---
-        let allData = [];
-        let filteredData = [];
+        let fullDatabase = {}; // Stores the RAW DB
+        let allData = []; // Stores filtered anomalies for the main list
+        let filteredData = []; // Stores the current search result for the list
         let currentPage = 1;
         let currentView = 'list';
 
@@ -340,12 +340,20 @@
         const toggleTutorial = (show) => {
             const modal = document.getElementById('tutorial-modal');
             const video = document.getElementById('tutorial-video');
+            
             if (show) {
                 modal.classList.remove('hidden');
+                // Lazy Load Source
+                if (!video.src) {
+                     video.src = VIDEO_URL;
+                }
                 video.play().catch(e => console.log('Autoplay prevented'));
             } else {
                 modal.classList.add('hidden');
                 video.pause();
+                // Optional: Stop download completely
+                video.src = ""; 
+                video.load();
             }
         };
 
@@ -364,6 +372,7 @@
         }
 
         function processData(rawData) {
+            fullDatabase = rawData; // STORE RAW DATA GLOBALLY
             allData = [];
             let stats = { total: 0, android: 0, iphone: 0, web: 0 };
 
@@ -566,18 +575,41 @@
 
         function changePage(p) { currentPage = p; renderList(); document.getElementById('view-list').scrollIntoView({ behavior: 'smooth' }); }
 
-        // --- LOOKUP VIEW LOGIC ---
+        // --- LOOKUP VIEW LOGIC (UPDATED) ---
         function performLookup() {
             const query = toEnglishDigits(document.getElementById('lookup-input').value.toLowerCase().trim());
             const container = document.getElementById('lookup-result');
             
             if(!query) return;
 
-            const found = allData.find(u => u.u.toLowerCase() === query || u.i === query);
+            let foundRaw = null;
+            let foundUsername = "";
+
+            // Search in global fullDatabase
+            for (const [key, value] of Object.entries(fullDatabase)) {
+                if (key.toLowerCase() === query || (value.data && value.data.id === query)) {
+                    foundRaw = value;
+                    foundUsername = key;
+                    break;
+                }
+            }
             
-            if(found) {
+            if(foundRaw && foundRaw.data) {
+                const d = foundRaw.data;
+                // Prepare object for display
+                const found = {
+                    u: foundUsername,
+                    i: d.id || "0",
+                    a: d.avatar || "",
+                    d: d.deviceFull || d.device || "Unknown",
+                    l: d.country || d.countryCode || "Unknown",
+                    c: d.created || "-",
+                    tags: foundRaw.tags || [],
+                    risk: d.riskLabel || "INFO"
+                };
+
                 const avatar = found.a || "/assets/images/placeholder.png";
-                const riskColor = found.d.toLowerCase().includes('android') ? 'bg-red-500' : 'bg-orange-500';
+                const riskColor = found.d.toLowerCase().includes('android') ? 'bg-red-500' : (found.risk === "ANOMALY" ? 'bg-orange-500' : 'bg-blue-500');
                 
                 container.innerHTML = `
                 <div class="group relative bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden shadow-2xl animate-fade-in-up mt-8">
@@ -593,7 +625,7 @@
                             </div>
                         </div>
                         <div class="mb-6 flex justify-center">
-                            <span class="px-4 py-1.5 rounded-full text-xs font-black tracking-wider border border-red-900/50 bg-red-900/20 text-red-500">${found.risk}</span>
+                            <span class="px-4 py-1.5 rounded-full text-xs font-black tracking-wider border border-slate-700 bg-slate-800 text-slate-300">${found.risk}</span>
                         </div>
                         <div class="space-y-4 mb-8">
                             <div class="grid grid-cols-2 gap-4">
@@ -618,7 +650,7 @@
                     </div>
                 </div>`;
             } else {
-                container.innerHTML = `<div class="mt-8 p-6 bg-red-900/10 border border-red-900/30 rounded-2xl text-center text-red-400 font-bold animate-fade-in-up">کاربری یافت نشد.</div>`;
+                container.innerHTML = `<div class="mt-8 p-6 bg-red-900/10 border border-red-900/30 rounded-2xl text-center text-red-400 font-bold animate-fade-in-up">کاربری با این مشخصات یافت نشد.</div>`;
             }
         }
 
@@ -713,6 +745,34 @@
 
         // Close lightbox on ESC
         window.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
+        
+        // --- LIGHTBOX FUNCTIONS ---
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(src) {
+            const highRes = src.replace("_normal", "_orig").replace("_400x400", "_orig");
+            lightboxImg.src = highRes;
+            lightbox.classList.remove('hidden');
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+        
+        lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
 
         // Start App
         init();
