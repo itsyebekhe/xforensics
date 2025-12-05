@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         X Profile Forensics (v20.7.0)
+// @name         X Profile Forensics (v20.8.0)
 // @namespace    http://tampermonkey.net/
-// @version      20.7.0
+// @version      20.8.0
 // @description  Forensics tool. additon of Forensic Search.
 // @author       https://x.com/yebekhe
 // @match        https://x.com/*
@@ -22,7 +22,7 @@
 
     const TRANSLATIONS = {
         en: {
-            title: "Forensics v20.7",
+            title: "Forensics v20.8",
             menu_btn: "Forensics",
             labels: { location: "Location", device: "Device", id: "Perm ID", created: "Created", renamed: "Renamed", identity: "Identity", lang: "Language", type: "Type" },
             risk: { safe: "SAFE", detected: "DETECTED", anomaly: "ANOMALY", caution: "CAUTION", normal: "NORMAL", verified: "VERIFIED ID" },
@@ -76,7 +76,7 @@
                 nav_tools: "Tools",
                 nav_data: "Settings",
                 filter_tag: "Filter Tag",
-                btn_back: "← Back",      
+                btn_back: "← Back",
                 tools_title: "Tools & Utilities",
                 batch_desc: "Process multiple users & auto-merge.",
                 tags_desc: "Visual tag cloud & stats.",
@@ -119,7 +119,7 @@
             },
         },
         fa: {
-            title: "تحلیلگر پروفایل ۲۰.٧",
+            title: "تحلیلگر پروفایل ۲۰.۸",
             menu_btn: "جرم‌شناسی",
             labels: { location: "موقعیت", device: "دستگاه", id: "شناسه", created: "ساخت", renamed: "تغییر نام", identity: "هویت", lang: "زبان", type: "نوع" },
             risk: { safe: "امن", detected: "هشدار", anomaly: "ناهنجاری", caution: "احتیاط", normal: "طبیعی", verified: "تایید شده" },
@@ -172,8 +172,8 @@
                 nav_home: "پایگاه داده",
                 nav_tools: "ابزارها",
                 nav_data: "تنظیمات",
-                filter_tag: "فیلتر تگ",   
-                btn_back: "← بازگشت",     
+                filter_tag: "فیلتر تگ",
+                btn_back: "← بازگشت",
                 tools_title: "ابزارها و امکانات",
                 batch_desc: "پردازش گروهی و ادغام خودکار.",
                 tags_desc: "آمار و ابر تگ‌ها.",
@@ -888,8 +888,8 @@
                                 const data = {
                                     country: getCountryDisplay(about.account_based_in),
                                     countryCode: about.account_based_in,
-                                    device: devShort,     
-                                    deviceFull: devFull,   
+                                    device: devShort,
+                                    deviceFull: devFull,
                                     id: res.rest_id,
                                     created: formatTime(createdTs),
                                     created_raw: createdTs,
@@ -1961,11 +1961,15 @@
             <!-- NEW FORENSIC SEARCH SECTION -->
             <div class="xf-analysis-section" style="margin-top:10px; border-color:var(--xf-border);">
                 <div class="xf-analysis-title">${TEXT.search ? TEXT.search.title : "Forensic Search"}</div>
-                
+
                 <!-- 1. Interactions -->
-                <div style="margin-bottom:8px;">
-                    <a href="https://x.com/search?q=(from:${username}) filter:replies&src=typed_query&f=live" target="_blank" class="xf-btn" style="text-align:center; margin-bottom:5px;">
-                        💬 ${TEXT.search ? TEXT.search.interact : "Check Replies"}
+                <div style="margin-bottom:8px; display:flex; gap:5px;">
+                    <a href="https://x.com/search?q=(from:${username}) filter:replies&src=typed_query&f=live" target="_blank" class="xf-btn" style="flex:1; text-align:center;">
+                        💬 ${TEXT.search ? TEXT.search.interact : "Replies"}
+                    </a>
+                    <!-- NEW: 12 Day War Date Search -->
+                    <a href="https://x.com/search?q=(from:${username}) since:2025-06-13 until:2025-06-25&src=typed_query&f=live" target="_blank" class="xf-btn" style="flex:1; text-align:center; background:rgba(255, 212, 0, 0.1); color:#ffd400; border:1px solid #ffd400;">
+                        📅 ${ACTIVE_LANG === 'fa' ? "جنگ ۱۲ روزه (خرداد)" : "12-Day War"}
                     </a>
                 </div>
 
@@ -1973,7 +1977,7 @@
                 <div style="font-size:10px; color:var(--xf-dim); margin-bottom:4px;">${TEXT.search ? TEXT.search.keywords : "Keywords"}:</div>
                 <div class="xf-tags-grid">
                     ${searchKeywords.map(k => `
-                        <a href="https://x.com/search?q=(from:${username}) (${encodeURIComponent(k.query)})&src=typed_query&f=live" 
+                        <a href="https://x.com/search?q=(from:${username}) (${encodeURIComponent(k.query)})&src=typed_query&f=live"
                            target="_blank" class="xf-tag-btn" style="text-align:center; text-decoration:none; display:block;">
                            ${k.label}
                         </a>
@@ -1982,7 +1986,7 @@
             </div>
 
             <textarea class="xf-textarea" id="xf-note-input" data-user="${username}" placeholder="${TEXT.notes_placeholder}">${existingNote}</textarea>
-            
+
             <div class="xf-osint-row">
                 <a href="https://web.archive.org/web/*/twitter.com/${username}" target="_blank" title="${TEXT.osint_titles.archive}" class="xf-osint-icon">🏛️</a>
                 <a href="https://www.google.com/search?q=%22${username}%22" target="_blank" title="${TEXT.osint_titles.google}" class="xf-osint-icon">🔍</a>
