@@ -156,7 +156,7 @@
 
             <!-- 4. TOOLS VIEW -->
             <div id="view-tools" class="view-section hidden">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
                     <!-- Tool 1 -->
                     <div class="bg-slate-900 rounded-3xl border border-slate-800 p-8 shadow-xl">
                         <div class="flex items-center gap-4 mb-6"><div class="w-12 h-12 bg-blue-500/10 text-blue-500 rounded-2xl flex items-center justify-center text-2xl">📝</div><div><h3 class="text-lg font-bold text-white">تبدیل Backup به لیست</h3><p class="text-xs text-slate-400">استخراج نام کاربری از فایل JSON</p></div></div>
@@ -168,6 +168,42 @@
                         <div class="border-2 border-dashed border-slate-700 rounded-2xl p-8 text-center hover:border-green-500 transition-colors cursor-pointer bg-slate-950/50" onclick="document.getElementById('tool-dump-input').click()"><input type="file" id="tool-dump-input" accept=".json" class="hidden" onchange="handleDumpTool(this)"><div class="text-4xl mb-4">📊</div><div class="text-sm font-bold text-slate-300">انتخاب فایل Dump</div></div>
                     </div>
                 </div>
+
+                <!-- NEW: EXTERNAL DATABASE SEARCH -->
+                <div class="bg-slate-900 rounded-3xl border border-slate-800 p-8 shadow-xl max-w-4xl mx-auto mb-8">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-purple-500/10 text-purple-500 rounded-2xl flex items-center justify-center text-2xl">🔍</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">جستجوی پایگاه داده (BData)</h3>
+                            <p class="text-xs text-slate-400">جستجو در دیتابیس عمومی HuggingFace بر اساس نام، کدملی یا موبایل</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <input type="text" id="ext-name" placeholder="نام و نام خانوادگی (مثال: علی رضایی)" class="bg-slate-950 px-4 py-3 rounded-xl border border-slate-700 focus:border-purple-500/50 outline-none text-sm text-white transition-all">
+                        <input type="text" id="ext-code" placeholder="کد ملی (۱۰ رقم)" class="bg-slate-950 px-4 py-3 rounded-xl border border-slate-700 focus:border-purple-500/50 outline-none text-sm text-white transition-all dir-ltr text-center">
+                        <input type="text" id="ext-mobile" placeholder="موبایل (0912...)" class="bg-slate-950 px-4 py-3 rounded-xl border border-slate-700 focus:border-purple-500/50 outline-none text-sm text-white transition-all dir-ltr text-center">
+                    </div>
+                    
+                    <button onclick="handleExternalSearch()" class="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-bold transition-all shadow-lg shadow-purple-600/20">جستجو در پایگاه داده</button>
+
+                    <!-- Ext Results -->
+                    <div id="ext-results" class="hidden mt-6 overflow-x-auto rounded-xl border border-slate-700">
+                        <table class="w-full text-left text-sm text-slate-400">
+                            <thead class="bg-slate-950 text-slate-300 uppercase font-mono text-xs">
+                                <tr>
+                                    <th class="px-4 py-3 text-right">نام کامل</th>
+                                    <th class="px-4 py-3 text-center">کد ملی</th>
+                                    <th class="px-4 py-3 text-center">موبایل</th>
+                                    <th class="px-4 py-3 text-right">نام پدر</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ext-results-body" class="divide-y divide-slate-800 bg-slate-900/50"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Dump Result Area (Hidden initially) -->
                 <div id="dump-result-area" class="hidden mt-8 bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden max-w-6xl mx-auto">
                     <div class="p-4 bg-slate-800/50 border-b border-slate-800 flex justify-between items-center"><h3 class="font-bold text-sm">نتایج استخراج شده</h3><button onclick="document.getElementById('dump-result-area').classList.add('hidden')" class="text-xs text-red-400 hover:text-red-300">بستن پنجره</button></div>
                     <div class="overflow-x-auto"><table class="w-full text-left text-sm text-slate-400"><thead class="bg-slate-950 text-slate-200 uppercase font-mono text-xs"><tr><th class="px-6 py-3">تاریخ</th><th class="px-6 py-3">نام کاربری</th><th class="px-6 py-3">متن توییت</th><th class="px-6 py-3">لینک</th></tr></thead><tbody id="dump-table-body" class="divide-y divide-slate-800"></tbody></table></div>
@@ -287,6 +323,81 @@
         
         const toEnglishDigits = (str) => { if (!str) return ""; return String(str).replace(/[۰-۹]/g, w => ENGLISH_NUMS[PERSIAN_NUMS.indexOf(w)]); };
 
+        // --- UTILS: EXTERNAL SEARCH ---
+        function normalizePersian(text) {
+            if (!text) return "";
+            return text.replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ى/g, "ی").trim();
+        }
+
+        async function searchDatabase({ nationalCode, fullName, mobile }) {
+            const DATASET = "yebekhe/bdata";
+            const CONFIG = "default";
+            const SPLIT = "train";
+            let conditions = [];
+
+            if (nationalCode) {
+                const cleanCode = nationalCode.trim();
+                conditions.push(`(NATIONAL_CODE = '${cleanCode.startsWith('0') ? cleanCode : '0'+cleanCode}' OR NATIONAL_CODE = '${cleanCode.startsWith('0') ? cleanCode.substring(1) : cleanCode}')`);
+            }
+            if (mobile) {
+                conditions.push(`MOBILE = '${mobile.trim()}'`);
+            }
+            if (fullName) {
+                conditions.push(`FULL_NAME LIKE '%${normalizePersian(fullName)}%'`);
+            }
+
+            if (conditions.length === 0) return [];
+            
+            const url = `https://datasets-server.huggingface.co/filter?dataset=${DATASET}&config=${CONFIG}&split=${SPLIT}&where=${encodeURIComponent(conditions.join(" AND "))}`;
+            
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("API Error");
+                const data = await response.json();
+                return data.rows.map(item => item.row);
+            } catch (error) {
+                console.error("Search failed:", error);
+                return [];
+            }
+        }
+
+        async function handleExternalSearch() {
+            const name = document.getElementById('ext-name').value;
+            const code = document.getElementById('ext-code').value;
+            const mobile = document.getElementById('ext-mobile').value;
+            const btn = document.querySelector('button[onclick="handleExternalSearch()"]');
+            const resultDiv = document.getElementById('ext-results');
+            const tbody = document.getElementById('ext-results-body');
+
+            if (!name && !code && !mobile) return alert("لطفا حداقل یک فیلد را پر کنید.");
+
+            btn.disabled = true;
+            btn.innerHTML = `<span class="loader w-4 h-4 border-2 border-t-transparent inline-block mr-2"></span> در حال جستجو...`;
+            resultDiv.classList.add('hidden');
+
+            const results = await searchDatabase({ nationalCode: code, fullName: name, mobile: mobile });
+
+            if (results && results.length > 0) {
+                tbody.innerHTML = "";
+                results.forEach(row => {
+                    tbody.innerHTML += `
+                    <tr class="hover:bg-slate-800/50 transition-colors">
+                        <td class="px-4 py-3 text-right font-bold text-white">${row.FULL_NAME || '-'}</td>
+                        <td class="px-4 py-3 text-center font-mono text-slate-400 select-all">${row.NATIONAL_CODE || '-'}</td>
+                        <td class="px-4 py-3 text-center font-mono text-slate-400 select-all">${row.MOBILE || '-'}</td>
+                        <td class="px-4 py-3 text-right text-slate-500">${row.FATHER_NAME || '-'}</td>
+                    </tr>`;
+                });
+                resultDiv.classList.remove('hidden');
+            } else {
+                alert("موردی یافت نشد.");
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = "جستجو در پایگاه داده";
+        }
+
+        // --- APP INIT ---
         async function init() {
             try {
                 const response = await fetch(`${DB_URL}?t=${Date.now()}`);
